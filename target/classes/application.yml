@@ -39,16 +39,28 @@ spring:
         min-idle: 5       # 连接池中的最小空闲连接
   mvc:
     throw-exception-if-no-handler-found: true
+<<<<<<< HEAD
   resources:
     add-mappings: true
   thymeleaf:
     cache: false
   jpa:
     show-sql: true
+=======
+    static-path-pattern: /static/**
+  resources:
+    add-mappings: false
+>>>>>>> f14518782b323302b1d53949ddebc6805e31f635
 
 #mybatis
 mybatis-plus:
 
+<<<<<<< HEAD
 #logger 日志
 logging:
   config: classpath:logback-boot.xml
+=======
+
+
+
+>>>>>>> f14518782b323302b1d53949ddebc6805e31f635

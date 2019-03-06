@@ -64,10 +64,13 @@
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
         <dependency>
+<<<<<<< HEAD
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
+=======
+>>>>>>> f14518782b323302b1d53949ddebc6805e31f635
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
         </dependency>
