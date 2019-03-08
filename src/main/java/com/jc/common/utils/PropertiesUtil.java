@@ -1,9 +1,6 @@
-package com.jc.utils;
-
-import com.sun.istack.internal.Nullable;
+package com.jc.common.utils;
 
 import java.io.InputStream;
-import java.util.List;
 import java.util.Properties;
 
 public class PropertiesUtil {

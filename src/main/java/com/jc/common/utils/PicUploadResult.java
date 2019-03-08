@@ -1,4 +1,4 @@
-package com.jc.utils;
+package com.jc.common.utils;
 
 public class PicUploadResult {
 

@@ -1,6 +1,6 @@
-package com.jc.json;
+package com.jc.common.json;
 
-public class JsonResult  {
+public class JsonResult {
 
     public static final int SUCCESS = 0;
     public static final int ERROR = 1;

@@ -1,4 +1,4 @@
-package com.jc.po;
+package com.jc.modules.company.entity;
 
 /**
  * @Author: Charles Chan

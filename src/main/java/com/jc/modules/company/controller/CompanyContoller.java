@@ -1,7 +1,7 @@
-package com.jc.controller.company;
+package com.jc.modules.company.controller;
 
-import com.jc.json.JsonResult;
-import com.jc.po.Company;
+
+import com.jc.common.json.JsonResult;
 import com.jc.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

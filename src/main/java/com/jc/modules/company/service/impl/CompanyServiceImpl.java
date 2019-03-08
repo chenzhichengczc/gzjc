@@ -1,8 +1,10 @@
-package com.jc.service;
+package com.jc.modules.company.service.impl;
 
-import com.jc.mapper.CompanyMapper;
-import com.jc.po.Company;
-import org.springframework.beans.factory.annotation.Autowired;
+
+
+import com.jc.modules.company.entity.Company;
+import com.jc.modules.company.mapper.CompanyMapper;
+import com.jc.modules.company.service.CompanyService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -13,7 +15,7 @@ import javax.annotation.Resource;
  * @Version 1.0
  */
 @Service
-public class CompanyServiceImpl implements CompanyService{
+public class CompanyServiceImpl implements CompanyService {
 
     @Resource
     private CompanyMapper companyMapper;

@@ -1,4 +1,4 @@
-package com.jc.po;
+package com.jc.modules.product.entity;
 
 import java.util.Date;
 

@@ -1,6 +1,6 @@
-package com.jc.service;
+package com.jc.modules.company.service;
 
-import com.jc.po.Company;
+import com.jc.modules.company.entity.Company;
 
 /**
  * @Author: Charles Chan

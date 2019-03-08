@@ -1,6 +1,6 @@
-package com.jc.mapper;
+package com.jc.modules.company.mapper;
 
-import com.jc.po.Company;
+import com.jc.modules.company.entity.Company;
 import org.apache.ibatis.annotations.Select;
 
 /**
