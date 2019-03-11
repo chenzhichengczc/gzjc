@@ -20,7 +20,7 @@ spring:
   # 文件上传格式
   servlet:
     multipart:
-      max-file-size: 100MB # 单个上传最大文件大小
+      max-file-size: 10MB # 单个上传最大文件大小
       max-request-size: 100MB  # 单个请求总文件大小
       enabled: true
   # 缓存
@@ -39,28 +39,25 @@ spring:
         min-idle: 5       # 连接池中的最小空闲连接
   mvc:
     throw-exception-if-no-handler-found: true
-<<<<<<< HEAD
   resources:
     add-mappings: true
   thymeleaf:
     cache: false
   jpa:
     show-sql: true
-=======
     static-path-pattern: /static/**
-  resources:
-    add-mappings: false
->>>>>>> f14518782b323302b1d53949ddebc6805e31f635
+
 
 #mybatis
 mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
 
-<<<<<<< HEAD
+
 #logger 日志
 logging:
   config: classpath:logback-boot.xml
-=======
 
 
 
->>>>>>> f14518782b323302b1d53949ddebc6805e31f635
+

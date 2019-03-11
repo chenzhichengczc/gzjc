@@ -1,15 +1,14 @@
 package com.jc.modules.company.mapper;
 
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.jc.modules.company.entity.Company;
-import org.apache.ibatis.annotations.Select;
 
 /**
  * @Author: Charles Chan
- * @Date: 2019/3/7 1:04
+ * @Date: 2019/3/11 17:00
  * @Version 1.0
+ * 公司映射文件
  */
-public interface CompanyMapper {
+public interface CompanyMapper extends BaseMapper<Company> {
 
-    @Select("")
-    Company getCompanyMessage();
 }
