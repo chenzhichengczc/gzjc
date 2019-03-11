@@ -40,6 +40,7 @@
         <joda.time.version>2.9.9</joda.time.version>
         <fastjson.version>1.2.47</fastjson.version>
         <hutool.version>4.1.1</hutool.version>
+        <lombok.version>1.18.6</lombok.version>
 
         <!--wagon plugin 配置-->
         <service-path>/work/renren</service-path>
@@ -64,13 +65,10 @@
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
         <dependency>
-<<<<<<< HEAD
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
-=======
->>>>>>> f14518782b323302b1d53949ddebc6805e31f635
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
         </dependency>
@@ -226,6 +224,11 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>${hutool.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
 
 
