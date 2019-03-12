@@ -1,31 +1,26 @@
 package com.jc.modules.company.controller;
 
-
 import com.jc.common.json.JsonResult;
-import com.jc.service.CompanyService;
+import com.jc.modules.company.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: Charles Chan
- * @Date: 2019/3/7 0:58
+ * @Date: 2019/3/11 18:31
  * @Version 1.0
  */
-@RestController("/company")
-public class CompanyContoller {
+@RestController
+@RequestMapping("/company")
+public class CompanyController {
 
     @Autowired
     private CompanyService companyService;
 
-    /**
-     * 获取公司对象信息
-     * @return Json数据绑定
-     */
     @RequestMapping("/getCompanyMessage")
     public JsonResult getCompanyMessage(){
-        Company company = companyService.getCompanyMessage();
-        return null;
+        return new JsonResult(companyService.getCompanyMessage());
     }
 
 }

@@ -14,7 +14,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * @version: 1.0
  */
 @SpringBootApplication
-@MapperScan("com.jc.mapper")
+@MapperScan("com.jc.modules.*.mapper")
 @SpringBootConfiguration
 public class Application extends SpringBootServletInitializer {
 

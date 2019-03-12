@@ -1,12 +1,17 @@
 package com.jc.modules.company.service;
 
 import com.jc.modules.company.entity.Company;
+import org.springframework.stereotype.Service;
 
 /**
  * @Author: Charles Chan
- * @Date: 2019/3/7 1:01
+ * @Date: 2019/3/11 17:04
  * @Version 1.0
+ * 接口
  */
+
 public interface CompanyService {
-    Company getCompanyMessage();
+
+    public Company getCompanyMessage();
+
 }
