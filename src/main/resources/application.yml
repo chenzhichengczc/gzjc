@@ -50,6 +50,8 @@ spring:
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
+  mapper-locations: classpath*/mappers/**/*.xml
+  type-aliases-package: com.jc.modules/*/entity
 
 
 #logger 日志
