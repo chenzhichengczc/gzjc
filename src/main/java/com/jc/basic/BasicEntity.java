@@ -1,5 +1,7 @@
-package com.jc.common.basic;
+package com.jc.basic;
 
+import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.enums.FieldFill;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -16,18 +18,19 @@ import java.util.Date;
 @ApiModel("基础实体类")
 public class BasicEntity implements Serializable {
 
-
-    private static final long serialVersionUID = 1L;
-
     @ApiModelProperty(value = "创建时间",name = "createTime")
-    private Date createTime;
+    @TableField(value = "create_time")
+    private Date createTime = new Date();
 
     @ApiModelProperty(value = "创建人",name = "createBy")
-    private  String createBy;
+    @TableField(value = "create_by")
+    private  String createBy = "Charles";
 
     @ApiModelProperty(value = "修改时间",name = "proUpdateTime")
-    private  Date updateTime;
+    @TableField(value = "pro_update_time")
+    private  Date proUpdateTime = new Date();
 
     @ApiModelProperty(value = "修改人",name = "proUpdateBy")
-    private  String updateBy;
+    @TableField(value = "pro_update_by")
+    private  String proUpdateBy = "Charles";
 }

@@ -3,6 +3,7 @@ package com.jc.modules.company.entity;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.enums.IdType;
+import com.jc.basic.BasicEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -17,7 +18,7 @@ import java.util.Date;
 @Data
 @ApiModel("公司主体")
 @TableName("jc_company")
-public class Company extends BasicEntity{
+public class Company extends BasicEntity {
     //主键
     @TableId(type = IdType.AUTO)
     private  Long id;
