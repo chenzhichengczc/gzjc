@@ -2,7 +2,6 @@ package com.jc.modules.information.controller;
 
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.jc.common.utils.ResponseUtil;
 import com.jc.modules.information.entity.InformationEntity;
