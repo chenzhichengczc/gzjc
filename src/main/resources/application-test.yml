@@ -1,4 +1,4 @@
-gt-mysql.ci6bqn9htuop.ap-southeast-1.rds.amazonaws.com
+
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
