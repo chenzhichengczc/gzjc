@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CommonController {
 
     @RequestMapping("/{page}")
-    public String toPage(@PathVariable String page){
+    public String toPage(@PathVariable  String page){
         return page;
     }
 

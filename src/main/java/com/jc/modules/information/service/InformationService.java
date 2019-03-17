@@ -25,5 +25,17 @@ public interface InformationService extends IService<InformationEntity> {
      * @author ：fenghuang
      * @date ：Created in 2019/3/13 14:36
      */
-    public List<InformationEntity> findByPage(Page<InformationEntity> page, Wrapper<InformationEntity> wrapper);
+    List<InformationEntity> findByPage(Page<InformationEntity> page, Wrapper<InformationEntity> wrapper);
+
+    InformationEntity selectById(Integer id);
+
+    void insertInfo(InformationEntity informationEntity);
+
+    void batchInsertInfo(List<InformationEntity> infoList);
+
+    void updateInfoById(InformationEntity informationEntity);
+
+    void deleteInfoById(Integer id);
+
+
 }

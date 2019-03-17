@@ -9,6 +9,7 @@ import com.jc.modules.information.service.InformationService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -39,5 +40,39 @@ public class InformationController {
         return ResponseUtil.success(pageList);
     }
 
+    @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
+    @ApiOperation(value = "获取单个资讯核心类型",notes = "资讯查询")
+    public ResponseUtil selectById(@PathVariable Integer id){
+        InformationEntity informationEntity = informationService.selectById(id);
+        return ResponseUtil.success(informationEntity);
+    }
+
+    @RequestMapping(value = "/insert",method = RequestMethod.POST)
+    @ApiOperation(value = "新增资讯核心类型",notes = "新增")
+    public ResponseUtil insertInfo(InformationEntity informationEntity){
+        informationService.insertInfo(informationEntity);
+        return ResponseUtil.success();
+    }
+
+    @RequestMapping(value = "/batch/insert",method = RequestMethod.POST)
+    @ApiOperation(value = "批量新增资讯核心类型",notes = "批量新增")
+    public ResponseUtil batchInsertInfo(List<InformationEntity> infoList){
+        informationService.batchInsertInfo(infoList);
+        return ResponseUtil.success();
+    }
+
+    @RequestMapping(value = "/update}",method = RequestMethod.PUT)
+    @ApiOperation(value = "更新资讯核心类型",notes = "更新")
+    public ResponseUtil updateInfoById(InformationEntity informationEntity){
+        informationService.updateInfoById(informationEntity);
+        return ResponseUtil.success();
+    }
+
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.DELETE)
+    @ApiOperation(value = "删除资讯核心类型",notes = "删除")
+    public ResponseUtil deleteInfoById(@PathVariable Integer id){
+        informationService.deleteInfoById(id);
+        return ResponseUtil.success();
+    }
 
 }
