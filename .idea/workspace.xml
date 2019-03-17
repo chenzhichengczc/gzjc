@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c573e2-8e7d-4ee9-b880-544dff6a7224" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/information/informationMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jc/modules/information/controller/InformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jc/modules/information/controller/InformationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jc/modules/information/mapper/InformationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jc/modules/information/mapper/InformationMapper.java" afterDir="false" />
@@ -10,6 +11,15 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jc/modules/page/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jc/modules/page/controller/CommonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/mybatis-conf.xml" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jc/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jc/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jc/common/basic/BasicEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jc/basic/BasicEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jc/modules/company/entity/BasicEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jc/modules/company/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jc/modules/company/entity/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jc/modules/information/entity/InformationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jc/modules/information/entity/InformationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jc/modules/page/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jc/basic/CommonController.java" afterDir="false" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -73,9 +83,42 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1028182266">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="46" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="46" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="646" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="646" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com.jc/modules/information/InformationServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -165,6 +208,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/scheduled/StatisticVisitTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </state>
           </provider>
         </entry>
@@ -190,6 +243,7 @@
       <find>assets</find>
       <find>logs</find>
       <find>map</find>
+      <find>BasicEntity</find>
     </findStrings>
     <replaceStrings>
       <replace>../assets</replace>
@@ -208,6 +262,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/resources/static/style.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/404.html" />
@@ -222,13 +277,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jc/service/CompanyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/service/CompanyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/mapper/CompanyMapper.java" />
+=======
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
         <option value="$PROJECT_DIR$/src/main/java/com/jc/utils/MD5Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/utils/PropertiesUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/utils/UploadUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/po/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/po/Information_detail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/po/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jc/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/common/json/JsonResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/common/utils/MD5Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/controller/company/CompanyContoller.java" />
@@ -242,6 +298,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jc/common/utils/ResponseUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/company/controller/CompanyContoller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/company/mapper/CompanyMapper.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/company/entity/Company.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/config/MybatisPlusConfig.java" />
@@ -252,13 +309,44 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jc/common/exception/JcException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/information/controller/InformationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/information/entity/InformationEntity.java" />
+=======
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/information/service/InformationService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
         <option value="$PROJECT_DIR$/src/main/java/com/jc/common/basic/BasicEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/information/mapper/InformationMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/information/informationMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/information/service/impl/InformationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com.jc/modules/information/InformationServiceTest.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/information/service/InformationService.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/information/controller/InformationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Statistic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/entity/Statistic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/impl/StatisticServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/StatisticMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/scheduled/StatisticVisitTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcscheduled/StatisticVisitTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/StatisticService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/statistic/service/StatisticService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/statistic/mapper/StatisticMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/statistic/service/impl/StatisticServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/basic/BasicEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/basic/CommonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/aop/StatisticVisitAop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/basic/BasicEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/basic/CommonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/statistic/entity/Statistic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/information/entity/InformationEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/modules/company/entity/Company.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jc/scheduled/StatisticVisitTask.java" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
       </list>
     </option>
   </component>
@@ -285,14 +373,19 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="12" />
+=======
+    <option name="x" value="837" />
+    <option name="y" value="172" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
     <option name="width" value="1170" />
-    <option name="height" value="788" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -334,6 +427,7 @@
               <item name="gzjc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -343,12 +437,22 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mappers" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
             <path>
               <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
               <item name="gzjc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="test" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
             <path>
               <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
@@ -356,6 +460,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
             <path>
               <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
@@ -363,7 +471,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
             <path>
               <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
@@ -371,8 +483,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="information" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
           </expand>
           <select />
@@ -383,8 +499,134 @@
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="gzjc" type="58d84e3e:PackageViewProjectNode" />
               <item name="gzjc" type="616d4139:PackageViewModuleNode" />
+=======
+              <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gzjc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+<<<<<<< HEAD
+              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="jc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+=======
+              <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gzjc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gzjc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gzjc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gzjc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gzjc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gzjc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gzjc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+<<<<<<< HEAD
+              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="jc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="common" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+=======
+              <item name="gzjc" type="58d84e3e:PackageViewProjectNode" />
+              <item name="gzjc" type="616d4139:PackageViewModuleNode" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
           </expand>
           <select />
@@ -396,84 +638,44 @@
             <path>
               <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="jc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="jc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="common" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+<<<<<<< HEAD
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="jc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+=======
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
             <path>
               <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+<<<<<<< HEAD
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="jc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="company" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+=======
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
             <path>
               <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="gzjc" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+<<<<<<< HEAD
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="jc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="company" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+=======
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
             <path>
               <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -481,11 +683,14 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+<<<<<<< HEAD
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="jc" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="company" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="entity" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+=======
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
             </path>
             <path>
               <item name="gzjc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -501,15 +706,26 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552815889022" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552654564430" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Charles\Desktop\gzjc\src\main\java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jc.modules.product.entity" />
       <recent name="com.jc.modules.information.entity" />
@@ -518,11 +734,11 @@
       <recent name="com.jc.modules.company.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Charles\Desktop\gzjc\src\main" />
       <recent name="E:\projects\gzjc\src\main\java\com\jc\common" />
       <recent name="C:\Users\Charles\Desktop\gzjc\src\main\resources\mapper" />
       <recent name="C:\Users\Charles\Desktop\gzjc\src\main\java\com\jc\utils" />
       <recent name="C:\Users\Charles\Desktop\gzjc\src\main\resources" />
-      <recent name="C:\Users\Charles\Desktop\gzjc\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -537,6 +753,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.InformationServiceTest.testBatchInsertInfo">
     <configuration name="InformationServiceTest.testBatchInsertInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gzjc" />
@@ -587,6 +804,11 @@
       </method>
     </configuration>
     <configuration name="InformationServiceTest.testSelectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jc.Application" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
       <module name="gzjc" />
       <extension name="coverage">
         <pattern>
@@ -635,11 +857,16 @@
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.InformationServiceTest.testBatchInsertInfo" />
         <item itemvalue="JUnit.InformationServiceTest.testInsertInfo" />
         <item itemvalue="JUnit.InformationServiceTest.testDeleteInfoById" />
         <item itemvalue="JUnit.InformationServiceTest.testUpdateInfoById" />
         <item itemvalue="JUnit.InformationServiceTest.testSelectById" />
+=======
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.InformationServiceTest" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
       </list>
     </recent_temporary>
   </component>
@@ -667,8 +894,14 @@
       <workItem from="1552479220845" duration="341000" />
       <workItem from="1552533034268" duration="1425000" />
       <workItem from="1552619880546" duration="2178000" />
+<<<<<<< HEAD
       <workItem from="1552635476888" duration="17314000" />
       <workItem from="1552810234138" duration="5495000" />
+=======
+      <workItem from="1552635476888" duration="4123000" />
+      <workItem from="1552649728219" duration="3514000" />
+      <workItem from="1552654029900" duration="962000" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
     </task>
     <task id="LOCAL-00001" summary="框架版本">
       <created>1551690311881</created>
@@ -718,15 +951,25 @@
     <history-entry file="InformationServiceTest_testBatchInsertInfo - 2019.03.17 at 17h 20m 21s.xml">
       <configuration name="InformationServiceTest.testBatchInsertInfo" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="InformationServiceTest - 2019.03.15 at 20h 20m 36s.xml">
+      <configuration name="InformationServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="78172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+=======
+    <option name="totallyTimeSpent" value="63962000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2715959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27148438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -735,9 +978,15 @@
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.034596376" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49934897" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.13344316" />
+=======
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5453048" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49934897" visible="true" weight="0.36126372" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39835164" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -747,7 +996,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49934897" weight="0.32967034" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3294893" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32692307" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -784,6 +1033,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="搭建MVC分层架构 完成工具类 制定返回格式" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/common/utils/MD5Utils.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -795,6 +1045,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/404.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+=======
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/about-us.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -805,6 +1057,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/product/entity/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1426">
@@ -819,6 +1072,9 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="jar://E:/jdk1.8.0_71/src.zip!/java/security/AccessControlException.java" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/common/json/JsonResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -826,6 +1082,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://E:/jdk1.8.0_71/src.zip!/java/lang/RuntimeException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -833,6 +1090,16 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/common/exception/JcException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/jdk1.8.0_71/src.zip!/java/lang/RuntimeException.java" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
     <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar!/org/slf4j/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -855,6 +1122,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/company/controller/CompanyContoller.java" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/company/entity/Company.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -866,6 +1134,9 @@
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/RowBounds.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/company/service/CompanyService.java">
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
@@ -881,6 +1152,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/plugins/Page.class">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="138">
           <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
         </state>
@@ -908,6 +1180,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/config/MybatisPlusConfig.java">
+=======
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/RowBounds.java">
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
@@ -933,11 +1214,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/company/service/impl/CompanyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="115">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="-299">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="29" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
         </state>
       </provider>
     </entry>
@@ -948,6 +1234,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/company/service/CompanyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -973,16 +1260,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/test/java/com.jc/modules/company/CompanyServiceTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1219">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com.jc/modules/information/InformationServiceTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="110">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/mapper/BaseMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/aop/WebLogAop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
@@ -1001,29 +1311,136 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/StatisticServiceImpl.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0-sources.jar!/com/baomidou/mybatisplus/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/basic/BasicEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/basic/CommonController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/company/entity/BasicEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/information/entity/Information_detail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/statistic/service/impl/StatisticServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/statistic/service/StatisticService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/statistic/mapper/StatisticMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/information/service/impl/InformationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/information/controller/InformationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/information/mapper/InformationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/company/controller/CompanyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/information/service/InformationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/basic/BasicEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/basic/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/common/basic/BasicEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/product/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/information/entity/InformationEntity.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="15">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+=======
+        <state relative-caret-position="147">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/information/controller/InformationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1052,11 +1469,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="31" column="62" lean-forward="true" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/company/entity/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/information/mapper/InformationMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/statistic/entity/Statistic.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="345">
           <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
         </state>
@@ -1080,14 +1507,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+=======
+        <state relative-caret-position="39">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/modules/information/service/impl/InformationServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/aop/StatisticVisitAop.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="166">
           <caret line="61" column="54" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="54" />
         </state>
@@ -1111,6 +1543,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+=======
+        <state relative-caret-position="111">
+          <caret line="42" column="55" lean-forward="true" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1413#1421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statisticVisit.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jc/scheduled/StatisticVisitTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 5fa739eb8b373f986947eb8c1b4fc298080a3cba
         </state>
       </provider>
     </entry>
