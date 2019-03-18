@@ -13,6 +13,10 @@ spring:
   # 环境 dev|test|prod 开发/测试/上线
   profiles:
     active: dev
+  #热部署
+  devtools:
+    restart:
+      enabled: true
   # jackson时间格式化
   jackson:
     time-zone: GMT+8
@@ -52,6 +56,7 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  #打印sql日志
   mapper-locations: classpath:mappers/*/*.xml
   type-aliases-package: com.jc.modules/*/entity
+
 
 
 
