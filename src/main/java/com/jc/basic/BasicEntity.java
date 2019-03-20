@@ -28,9 +28,9 @@ public class BasicEntity implements Serializable {
 
     @ApiModelProperty(value = "修改时间",name = "proUpdateTime")
     @TableField(value = "pro_update_time")
-    private  Date proUpdateTime = new Date();
+    private  Date updateTime = new Date();
 
     @ApiModelProperty(value = "修改人",name = "proUpdateBy")
     @TableField(value = "pro_update_by")
-    private  String proUpdateBy = "Charles";
+    private  String updateBy = "Charles";
 }
