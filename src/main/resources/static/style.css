@@ -1586,9 +1586,9 @@ a:focus,
 
 
 #mu-page-header {
-	background-image: url(assets/images/page-header-bg.jpg);
-	background-position: center center;
-	background-size: cover;
+	/*background-image: url(assets/images/page-header-bg.jpg);*/
+	/*background-position: center center;*/
+	/*background-size: cover;*/
 	display: inline;
 	float: left;
 	position: relative;

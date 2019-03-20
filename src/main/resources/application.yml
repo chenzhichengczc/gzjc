@@ -12,15 +12,12 @@ server:
 spring:
   # 环境 dev|test|prod 开发/测试/上线
   profiles:
-<<<<<<< HEAD
     active: test
-=======
-    active: dev
+#    active: dev
   #热部署
   devtools:
     restart:
       enabled: true
->>>>>>> 2148931f3e5f5d7f4f29b212c446dc81a6d35237
   # jackson时间格式化
   jackson:
     time-zone: GMT+8
