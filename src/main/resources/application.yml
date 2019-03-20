@@ -13,11 +13,11 @@ spring:
   # 环境 dev|test|prod 开发/测试/上线
   profiles:
     active: test
+#    active: dev
   #热部署
   devtools:
     restart:
       enabled: true
-
   # jackson时间格式化
   jackson:
     time-zone: GMT+8
