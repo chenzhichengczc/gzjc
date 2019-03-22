@@ -2,6 +2,7 @@ package com.jc.modules.contact.controller;
 
 import com.jc.common.json.JsonResult;
 import com.jc.common.utils.ResponseUtil;
+import com.jc.common.utils.TextValidator;
 import com.jc.modules.contact.entity.UserEntity;
 import com.jc.modules.contact.service.UserInformationService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -165,7 +165,7 @@
 									<div class="col-md-12">
 										<div class="mu-contact-form-area">
 											<div id="form-messages"></div>
-											<form id="ajax-contact" method="GET" action="#" class="mu-contact-form">
+											<form id="ajax-contact" method="POST" action="#" class="mu-contact-form">
 
 												<div class="form-group">  
 													<span class="fa fa-user mu-contact-icon"></span>              
@@ -189,7 +189,7 @@
 
 												<div class="form-group">
 													<span class="fa fa-pencil-square-o mu-contact-icon"></span> 
-													<textarea class="form-control" placeholder="Message" id="信息" name="message" required></textarea>
+													<textarea class="form-control" placeholder="信息" id="message" name="message" required></textarea>
 												</div>
 												<button type="submit" class="mu-send-msg-btn"><span>提交</span></button>
 								        	</form>
@@ -326,9 +326,10 @@
     <!-- Ajax contact form  -->
     <!--<script type="text/javascript" src="../assets/js/app.js"></script>-->
     <!-- Ajax contact form  -->
-    <!--<script type="text/javascript" src="../assets/js/contact.js"></script>-->
+
     <script type="text/javascript" src="../assets/js/jquery-1.9.1.min.js"></script>
-	
+    <script type="text/javascript" src="../assets/js/contact.js"></script>
+
     <!-- Custom js -->
 	<!--<script type="text/javascript" src="../assets/js/custom.js"></script>-->
 
@@ -364,25 +365,6 @@
 
 	<!--</script>-->
 
-  <script>
-      $(".mu-send-msg-btn").click(function () {
-          var url = "../user/insertUserInformation";
-          var data = $("#ajax-contact").serialize();
-          $.ajax({
-              "url": url,
-              "data": data,
-              "type": "POST",
-              "dataType": "json",
-              "success": function(json){
-
-                  if(json.state == 200){
-                      alert("提交成功");
-				  }
-
-              }
-          })
-      });
-  </script>
     
   </body>
 </html>

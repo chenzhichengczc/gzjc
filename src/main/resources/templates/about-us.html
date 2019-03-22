@@ -137,11 +137,11 @@
 									<div class="mu-about-right">
 										<ul>
 											<li>
-												<h3>Our Mission</h3>
+												<h3>我们的使命</h3>
 												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
 											</li>
 											<li>
-												<h3>Our Vision</h3>
+												<h3>我们的愿景</h3>
 												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
 											</li>
 											<li>
@@ -527,8 +527,8 @@
     <!-- Ajax contact form  -->
     <!--<script type="text/javascript" src="../assets/js/app.js"></script>-->
 
-   <!--<script type="text/javascript" src="../assets/js/company.js"></script>-->
    <script type="text/javascript" src="../assets/js/jquery-1.9.1.min.js"></script>
+   <script type="text/javascript" src="../assets/js/company.js"></script>
 	
     <!-- Custom js -->
 	<!--<script type="text/javascript" src="../assets/js/custom.js"></script>-->
@@ -566,21 +566,6 @@
 	<!--</script>-->
 
 
-  <script>
 
-      $(function () {
-          $.ajax({
-              url:"../company/getCompanyMessage",
-              type:"GET",
-              dataType:"json",
-              cache:false,
-              async:false,
-              success:function(data){
-                  $("#com_introduction_text").html(data.data.comIntroductionText);
-
-              }
-          })
-      })
-  </script>
   </body>
 </html>
