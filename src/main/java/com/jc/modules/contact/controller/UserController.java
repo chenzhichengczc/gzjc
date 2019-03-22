@@ -1,6 +1,7 @@
 package com.jc.modules.contact.controller;
 
 import com.jc.common.json.JsonResult;
+import com.jc.common.utils.ResponseUtil;
 import com.jc.modules.contact.entity.UserEntity;
 import com.jc.modules.contact.service.UserInformationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +22,9 @@ public class UserController {
     private UserInformationService userInformationService;
 
     @RequestMapping("/insertUserInformation")
-    public JsonResult insertUserInformation(UserEntity userEntity){
+    public ResponseUtil insertUserInformation(UserEntity userEntity){
         userInformationService.insertInfo(userEntity);
-        return new JsonResult();
+        return ResponseUtil.success();
     }
 
 }
