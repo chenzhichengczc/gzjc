@@ -4,11 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<<<<<<< HEAD
     <title>联系我们</title>
-=======
     <title>金诚科技-加入我们</title>
->>>>>>> f2b1f7df49441fcb9e2b0b4b1b44da388c98602f
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="../assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -83,7 +80,7 @@
 	<!-- End Header -->
 
 	 <!--Start Page Header area -->
-<<<<<<< HEAD
+
    <!--<iframe src="map.html" width="100%" height="400px"></iframe>-->
 	<!--<div id="mu-page-header">-->
 		<!--<div class="container">-->
@@ -96,37 +93,51 @@
 			<!--</div>-->
 		<!--</div>-->
 	<!--</div>-->
-=======
-	<div id="mu-page-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="mu-page-header-area">
-						<h1 class="mu-page-header-title">加入我们</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
->>>>>>> f2b1f7df49441fcb9e2b0b4b1b44da388c98602f
+   <!--Baidu map-->
+   <div id="mu-google-map">
+	   <iframe src="map.html" width="850" height="400" allowfullscreen></iframe>
+   </div>
+	<!--<div id="mu-page-header">-->
+		<!--<div class="container">-->
+			<!--<div class="row">-->
+				<!--<div class="col-md-12">-->
+					<!--<div class="mu-page-header-area">-->
+						<!--&lt;!&ndash;<h1 class="mu-page-header-title">加入我们</h1>&ndash;&gt;-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+
+	<!--<div id="mu-page-header">-->
+		<!--<div class="container">-->
+			<!--<div class="row">-->
+				<!--<div class="col-md-12">-->
+					<!--<div class="mu-page-header-area">-->
+						<!--<h1 class="mu-page-header-title">加入我们</h1>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
 
 	<!-- End Page Header area -->
 
 	<!-- Start Breadcrumb -->
-	<div id="mu-breadcrumb">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<nav aria-label="breadcrumb" role="navigation">
-					  <ol class="breadcrumb mu-breadcrumb">
-					    <li class="breadcrumb-item"><a href="#">首页</a></li>
-					    <li class="breadcrumb-item active" aria-current="page">加入我们</li>
-					  </ol>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</div>
+	<!--<div id="mu-breadcrumb">-->
+		<!--<div class="container">-->
+			<!--<div class="row">-->
+				<!--<div class="col-md-12">-->
+					<!--<nav aria-label="breadcrumb" role="navigation">-->
+					  <!--<ol class="breadcrumb mu-breadcrumb">-->
+					    <!--<li class="breadcrumb-item"><a href="#">首页</a></li>-->
+					    <!--<li class="breadcrumb-item active" aria-current="page">加入我们</li>-->
+					  <!--</ol>-->
+					<!--</nav>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
 	<!-- End Breadcrumb -->
 
 	
@@ -154,28 +165,33 @@
 									<div class="col-md-12">
 										<div class="mu-contact-form-area">
 											<div id="form-messages"></div>
-											<form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
+											<form id="ajax-contact" method="GET" action="#" class="mu-contact-form">
 
 												<div class="form-group">  
 													<span class="fa fa-user mu-contact-icon"></span>              
-													<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+													<input type="text" class="form-control" placeholder="姓名" id="name" name="username" required>
+												</div>
+
+												<div class="form-group">
+													<span class="fa fa-pencil-square-o mu-contact-icon"></span>
+													<input type="text" class="form-control" placeholder="手机号码" id="phone" name="phone" required>
 												</div>
 
 												<div class="form-group">  
 													<span class="fa fa-envelope mu-contact-icon"></span>              
-													<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+													<input type="email" class="form-control" placeholder="邮箱" id="email" name="email" required>
 												</div>    
 
 												<div class="form-group"> 
 													<span class="fa fa-folder-open-o mu-contact-icon"></span>                
-													<input type="text" class="form-control" placeholder="Your Subject" id="subject" name="subject" required>
+													<input type="text" class="form-control" placeholder="职业" id="subject" name="subject" required>
 												</div>
 
 												<div class="form-group">
 													<span class="fa fa-pencil-square-o mu-contact-icon"></span> 
-													<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+													<textarea class="form-control" placeholder="Message" id="信息" name="message" required></textarea>
 												</div>
-												<button type="submit" class="mu-send-msg-btn"><span>Send Message</span></button>
+												<button type="submit" class="mu-send-msg-btn"><span>提交</span></button>
 								        	</form>
 										</div>
 									</div>
@@ -190,10 +206,7 @@
 		</section>
 		<!-- End Contact -->
 
-		 Google map
-		<div id="mu-google-map">
-			<iframe src="map.html" width="850" height="400" allowfullscreen></iframe>
-		</div>
+
 
 
 	</main>
@@ -297,57 +310,79 @@
 
 	<!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>-->
 	<!-- Slick slider -->
-    <script type="text/javascript" src="../assets/js/slick.min.js"></script>
+    <!--<script type="text/javascript" src="../assets/js/slick.min.js"></script>-->
     <!-- Progress Bar -->
-    <script src="https://unpkg.com/circlebars@1.0.3/dist/circle.js"></script>
+    <!--<script src="https://unpkg.com/circlebars@1.0.3/dist/circle.js"></script>-->
     <!-- Filterable Gallery js -->
-    <script type="text/javascript" src="../assets/js/jquery.filterizr.min.js"></script>
+    <!--<script type="text/javascript" src="../assets/js/jquery.filterizr.min.js"></script>-->
     <!-- Gallery Lightbox -->
-    <script type="text/javascript" src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<script type="text/javascript" src="../assets/js/jquery.magnific-popup.min.js"></script>-->
     <!-- Counter js -->
-    <script type="text/javascript" src="../assets/js/counter.js"></script>
+    <!--<script type="text/javascript" src="../assets/js/counter.js"></script>-->
     <!-- Ajax contact form  -->
-    <script type="text/javascript" src="../assets/js/app.js"></script>
-    
+    <!--<script type="text/javascript" src="../assets/js/app.js"></script>-->
+    <!-- Ajax contact form  -->
+    <!--<script type="text/javascript" src="../assets/js/contact.js"></script>-->
+    <script type="text/javascript" src="../assets/js/jquery-1.9.1.min.js"></script>
 	
     <!-- Custom js -->
-	<script type="text/javascript" src="../assets/js/custom.js"></script>
+	<!--<script type="text/javascript" src="../assets/js/custom.js"></script>-->
 
 	<!-- About us Skills Circle progress  -->
-	<script>
-		// First circle
-	    new Circlebar({
-        element : "#circle-1",
-        type : "progress",
-	      maxValue:  "90"
-	    });
-		
-		// Second circle
-	    new Circlebar({
-        element : "#circle-2",
-        type : "progress",
-	      maxValue:  "84"
-	    });
+	<!--<script>-->
+		<!--// First circle-->
+	    <!--new Circlebar({-->
+        <!--element : "#circle-1",-->
+        <!--type : "progress",-->
+	      <!--maxValue:  "90"-->
+	    <!--});-->
 
-	    // Third circle
-	    new Circlebar({
-        element : "#circle-3",
-        type : "progress",
-	      maxValue:  "60"
-	    });
+		<!--// Second circle-->
+	    <!--new Circlebar({-->
+        <!--element : "#circle-2",-->
+        <!--type : "progress",-->
+	      <!--maxValue:  "84"-->
+	    <!--});-->
 
-	    // Fourth circle
-	    new Circlebar({
-        element : "#circle-4",
-        type : "progress",
-	      maxValue:  "74"
-	    });
+	    <!--// Third circle-->
+	    <!--new Circlebar({-->
+        <!--element : "#circle-3",-->
+        <!--type : "progress",-->
+	      <!--maxValue:  "60"-->
+	    <!--});-->
 
-	</script>
+	    <!--// Fourth circle-->
+	    <!--new Circlebar({-->
+        <!--element : "#circle-4",-->
+        <!--type : "progress",-->
+	      <!--maxValue:  "74"-->
+	    <!--});-->
+
+	<!--</script>-->
+
+  <script>
+      $(".mu-send-msg-btn").click(function () {
+          var url = "../user/insertUserInformation";
+          var data = $("#ajax-contact").serialize();
+          $.ajax({
+              "url": url,
+              "data": data,
+              "type": "POST",
+              "dataType": "json",
+              "success": function(json){
+
+                  if(json.state == 200){
+                      alert("提交成功");
+				  }
+
+              }
+          })
+      });
+  </script>
     
   </body>
 </html>

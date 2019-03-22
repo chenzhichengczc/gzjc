@@ -15,7 +15,7 @@ import lombok.Data;
  * @version :
  */
 
-@TableName("jc_userInformation")
+@TableName("jc_user")
 @Data
 @ApiModel("联系我们")
 public class UserEntity extends BasicEntity {
@@ -26,6 +26,9 @@ public class UserEntity extends BasicEntity {
     @ApiModelProperty(value = "用户名",name="username")
     private String username;
 
+    @ApiModelProperty(value = "手机号码",name="phone")
+    private String phone;
+
     @ApiModelProperty(value = "邮箱",name="email")
     private String email;
 
@@ -35,6 +38,5 @@ public class UserEntity extends BasicEntity {
     @ApiModelProperty(value = "信息",name = "message")
     private String message;
 
-    @ApiModelProperty(value = "手机号码",name="phone")
-    private Integer phone;
+
 }
