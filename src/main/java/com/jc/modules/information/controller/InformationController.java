@@ -61,7 +61,7 @@ public class InformationController {
         return ResponseUtil.success();
     }
 
-    @RequestMapping(value = "/update}",method = RequestMethod.PUT)
+    @RequestMapping(value = "/update",method = RequestMethod.PUT)
     @ApiOperation(value = "更新资讯核心类型",notes = "更新")
     public ResponseUtil updateInfoById(InformationEntity informationEntity){
         informationService.updateInfoById(informationEntity);
@@ -73,7 +73,6 @@ public class InformationController {
     public ResponseUtil deleteInfoById(@PathVariable Integer id){
         informationService.deleteInfoById(id);
         return ResponseUtil.success();
-
     }
 
 }
