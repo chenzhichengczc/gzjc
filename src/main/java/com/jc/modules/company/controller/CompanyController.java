@@ -1,6 +1,8 @@
 package com.jc.modules.company.controller;
 
 import com.jc.common.json.JsonResult;
+import com.jc.common.utils.ResponseUtil;
+import com.jc.modules.company.entity.Company;
 import com.jc.modules.company.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +21,9 @@ public class CompanyController {
     private CompanyService companyService;
 
     @RequestMapping("/getCompanyMessage")
-    public JsonResult getCompanyMessage(){
-        return new JsonResult(companyService.getCompanyMessage());
+    public ResponseUtil getCompanyMessage(){
+        Company companyMessage = companyService.getCompanyMessage();
+        return ResponseUtil.success(companyMessage);
     }
 
 }

@@ -32,8 +32,8 @@ public class UserEntity extends BasicEntity {
     @ApiModelProperty(value = "邮箱",name="email")
     private String email;
 
-    @ApiModelProperty(value = "职业",name="subject")
-    private String subject;
+    @ApiModelProperty(value = "职业",name="occupation")
+    private String occupation;
 
     @ApiModelProperty(value = "信息",name = "message")
     private String message;
