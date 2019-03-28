@@ -27,10 +27,10 @@ public class BasicEntity implements Serializable {
     private  String createBy = "Charles";
 
     @ApiModelProperty(value = "修改时间",name = "proUpdateTime")
-    @TableField(value = "pro_update_time")
+    @TableField(value = "update_time")
     private  Date updateTime = new Date();
 
     @ApiModelProperty(value = "修改人",name = "proUpdateBy")
-    @TableField(value = "pro_update_by")
+    @TableField(value = "update_by")
     private  String updateBy = "Charles";
 }
