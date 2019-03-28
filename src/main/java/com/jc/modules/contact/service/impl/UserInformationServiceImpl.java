@@ -17,7 +17,7 @@ public class UserInformationServiceImpl extends ServiceImpl<UserInformationMappe
     @Override
     public void insertInfo(UserEntity userEntity){
         Integer insertResult = userInformationMapper.insert(userEntity);
-        if(insertResult!=1){
+        if(insertResult != 1){
             throw new JcException("用户信息插入失败");
         }
     }

@@ -1,5 +1,7 @@
 package com.jc.common.json;
 
+import com.qiniu.util.Json;
+
 public class JsonResult {
 
     public static final int SUCCESS = 0;
@@ -33,6 +35,11 @@ public class JsonResult {
     public JsonResult(int state, Throwable e) {
         this.state = state;
         this.message = e.getMessage();
+    }
+
+    public JsonResult(int state,String message){
+        this.state = state;
+        this.message = message;
     }
 
     public int getState() {
