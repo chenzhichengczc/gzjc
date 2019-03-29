@@ -6,5 +6,4 @@ import com.jc.modules.contact.entity.UserEntity;
 public interface UserInformationMapper extends BaseMapper<UserEntity> {
 
 
-
 }

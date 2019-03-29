@@ -1,0 +1,16 @@
+* {
+    padding:0;
+    margin:0;
+}
+#em {
+    background:#ccc;
+}
+#es {
+    list-style:none;
+}
+#es:hover {
+    background:#fff;
+}
+.hide {
+    display:none;
+}

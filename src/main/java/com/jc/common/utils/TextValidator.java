@@ -18,6 +18,14 @@ public final class TextValidator {
      * 姓名正则表达式
      */
     public static final String REGEX_NAME = "^[\\u4e00-\\u9fa5]+(·[\\u4e00-\\u9fa5]+)*$";
+    /**
+     * 职业正则表达式
+     */
+    public static final String REGEX_OCCUPATION = "^[\\u4e00-\\u9fa5]+(·[\\u4e00-\\u9fa5]+)*$";
+    /**
+     * 信息正则表达式
+     */
+    public static final String REGEX_MESSAGE = "^[\\u4e00-\\u9fa5]+(·[\\u4e00-\\u9fa5]+)*$";
 
     public static boolean checkPhone(String phone){
         if(phone == null){
@@ -37,4 +45,11 @@ public final class TextValidator {
         return name.matches(REGEX_NAME);
     }
 
+    public static boolean checkOccupation(String occupation){
+        return occupation.matches(REGEX_OCCUPATION);
+    }
+
+    public static boolean checkMessage(String message){
+        return message.matches(REGEX_MESSAGE);
+    }
 }
