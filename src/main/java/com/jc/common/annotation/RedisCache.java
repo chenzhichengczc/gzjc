@@ -14,4 +14,6 @@ import java.lang.annotation.*;
 @Documented
 public @interface RedisCache {
     String key() default "";
+
+    long time() default 3600;
 }

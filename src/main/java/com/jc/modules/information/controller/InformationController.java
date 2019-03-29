@@ -40,6 +40,7 @@ public class InformationController {
         return ResponseUtil.success(pageList);
     }
 
+
     @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
     @ApiOperation(value = "获取单个资讯核心类型",notes = "资讯查询")
     public ResponseUtil selectById(@PathVariable Integer id){

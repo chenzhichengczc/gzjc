@@ -30,13 +30,14 @@ public class InformationServiceImpl extends ServiceImpl<InformationMapper, Infor
     private InformationMapper informationMapper;
 
 
-    @RedisCache(key = "pub:cache_key_in_information_list")
+    @RedisCache(key = "pub:cache_key_in_information_list",time = 1000)
     public List<InformationEntity> findByPage(Page<InformationEntity> page, Wrapper<InformationEntity> wrapper) {
+
         List<InformationEntity> informationList = informationMapper.selectPage(page, wrapper);
-        System.out.println("InformationServiceImpl.findByPage");
+
         return informationList;
     }
-    @RedisCache(key = "pub:cache_key_in_information")
+    @RedisCache(key = "pub:cache_key_in_information",time = 60)
     @Override
     public InformationEntity selectById(Integer id) {
         InformationEntity informationEntity = informationMapper.selectById(id);
