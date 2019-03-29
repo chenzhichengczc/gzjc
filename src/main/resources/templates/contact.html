@@ -19,6 +19,8 @@
     <!-- Skills Circle CSS  -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
 
+      <link href="../assets/css/xx.css" rel="stylesheet">;
+
     <!-- Main Style -->
     <link href="../style.css" rel="stylesheet">
 
@@ -161,15 +163,14 @@
 								<!-- Start Contact Content -->
 							<div class="mu-contact-content">
 								<div class="row">
-
 									<div class="col-md-12">
 										<div class="mu-contact-form-area">
 											<div id="form-messages"></div>
-											<form id="ajax-contact" method="POST" action="#" class="mu-contact-form">
+											<form id="ajax-contact" method="POST" action="#" class="mu-contact-form" >
 
 												<div class="form-group">  
 													<span class="fa fa-user mu-contact-icon"></span>              
-													<input type="text" class="form-control" placeholder="姓名" id="name" name="username" required>
+													<input type="text" class="form-control" placeholder="姓名" id="name" name="username"  required>
 												</div>
 
 												<div class="form-group">
@@ -178,8 +179,14 @@
 												</div>
 
 												<div class="form-group">  
-													<span class="fa fa-envelope mu-contact-icon"></span>              
-													<input type="email" class="form-control" placeholder="邮箱" id="email" name="email" required>
+													<span class="fa fa-envelope mu-contact-icon"></span>
+                                                    <div class="fat">
+													<input type="text" class="form-control" placeholder="邮箱" id="email" name="email" onkeyup="complete(this)" required>
+                                                    <div class="mail_box">
+                                                        <ul class="hide" id="em">
+                                                        </ul>
+                                                    </div>
+                                                    </div>
 												</div>    
 
 												<div class="form-group"> 
@@ -371,6 +378,5 @@
 
 	<!--</script>-->
 
-    
   </body>
 </html>

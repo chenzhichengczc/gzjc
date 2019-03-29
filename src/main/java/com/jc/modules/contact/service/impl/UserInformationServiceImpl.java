@@ -2,6 +2,7 @@ package com.jc.modules.contact.service.impl;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jc.common.exception.JcException;
+import com.jc.common.utils.TextValidator;
 import com.jc.modules.contact.entity.UserEntity;
 import com.jc.modules.contact.mapper.UserInformationMapper;
 import com.jc.modules.contact.service.UserInformationService;
@@ -16,9 +17,17 @@ public class UserInformationServiceImpl extends ServiceImpl<UserInformationMappe
 
     @Override
     public void insertInfo(UserEntity userEntity){
-        Integer insertResult = userInformationMapper.insert(userEntity);
-        if(insertResult != 1){
-            throw new JcException("用户信息插入失败");
+        if(!TextValidator.checkName(userEntity.getUsername())){
+            throw new JcException("名字格式错误");
+        }else if(!TextValidator.checkPhone(userEntity.getPhone())){
+            throw new JcException("号码格式错误");
+        }else if(!TextValidator.checkEmail(userEntity.getEmail())){
+            throw new JcException("邮箱格式错误");
+        }else if(!TextValidator.checkOccupation(userEntity.getOccupation())){
+            throw new JcException("职业格式错误");
+        }else if(!TextValidator.checkMessage(userEntity.getMessage())){
+            throw new JcException("信息格式错误");
         }
+        Integer insertResult = userInformationMapper.insert(userEntity);
     }
 }
