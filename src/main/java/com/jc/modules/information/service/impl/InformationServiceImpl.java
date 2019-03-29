@@ -4,6 +4,7 @@ package com.jc.modules.information.service.impl;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.jc.common.annotation.RedisCache;
 import com.jc.common.exception.JcException;
 import com.jc.modules.information.entity.InformationEntity;
 import com.jc.modules.information.mapper.InformationMapper;
@@ -28,12 +29,14 @@ public class InformationServiceImpl extends ServiceImpl<InformationMapper, Infor
     @Resource
     private InformationMapper informationMapper;
 
-    @Override
+
+    @RedisCache(key = "pub:cache_key_in_information_list")
     public List<InformationEntity> findByPage(Page<InformationEntity> page, Wrapper<InformationEntity> wrapper) {
         List<InformationEntity> informationList = informationMapper.selectPage(page, wrapper);
+        System.out.println("InformationServiceImpl.findByPage");
         return informationList;
     }
-
+    @RedisCache(key = "pub:cache_key_in_information")
     @Override
     public InformationEntity selectById(Integer id) {
         InformationEntity informationEntity = informationMapper.selectById(id);
