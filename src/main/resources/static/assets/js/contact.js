@@ -76,9 +76,12 @@ var commit = function () {
         data: data,
         type: "POST",
         dataType: "json",
-        cache: false,
         success: function (json) {
-
+            console.log(json);
+            if(json.code == 0){
+                alert("我们会尽快联系您!")
+                location.href = "index.html"
+            }
         }
     })
 }
@@ -109,27 +112,27 @@ $(".mu-send-msg-btn").click(function () {
  * 邮箱打出@的时候补全
  * @type {Document}
  */
-var d = document;
-var ul = d.querySelector('.mail_box>ul');
-
-function complete(btn) {
-    var val = btn.value;
-    var mail = ["qq.com", "sina.com", "163.com",
-        "gmail.com", "sohu.com"];
-    var idx = val.indexOf('@');
-    if (idx != -1) {
-        for (var i = 0, str = ''; i < mail.length; i++)
-            str += '<li id="es">' + val.slice(0, idx + 1) + mail[i] + '</li>';
-        ul.className = ul.className.replace(/(hide)/, '');
-        ul.innerHTML = str;
-    }
-}
-
-ul.addEventListener('click', function (e) {
-    var src = e.target || e.srcElement;
-    if (src.nodeName.toLowerCase() == 'li') {
-        d.getElementsByName('email')[0].value = src.innerHTML;
-        ul.className += 'hide';
-    }
-})
+// var d = document;
+// var ul = d.querySelector('.mail_box>ul');
+//
+// function complete(btn) {
+//     var val = btn.value;
+//     var mail = ["qq.com", "sina.com", "163.com",
+//         "gmail.com", "sohu.com"];
+//     var idx = val.indexOf('@');
+//     if (idx != -1) {
+//         for (var i = 0, str = ''; i < mail.length; i++)
+//             str += '<li id="es">' + val.slice(0, idx + 1) + mail[i] + '</li>';
+//         ul.className = ul.className.replace(/(hide)/, '');
+//         ul.innerHTML = str;
+//     }
+// }
+//
+// ul.addEventListener('click', function (e) {
+//     var src = e.target || e.srcElement;
+//     if (src.nodeName.toLowerCase() == 'li') {
+//         d.getElementsByName('email')[0].value = src.innerHTML;
+//         ul.className += 'hide';
+//     }
+// })
 
