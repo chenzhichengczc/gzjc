@@ -37,5 +37,6 @@ public interface InformationService extends IService<InformationEntity> {
 
     void deleteInfoById(Integer id);
 
+    List<InformationEntity> selectPage();
 
 }

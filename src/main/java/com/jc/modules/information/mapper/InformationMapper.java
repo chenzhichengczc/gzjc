@@ -18,4 +18,6 @@ public interface InformationMapper extends BaseMapper<InformationEntity> {
 
    boolean insertBatch(List<InformationEntity> list);
 
+   List<InformationEntity> selectPage();
+
 }

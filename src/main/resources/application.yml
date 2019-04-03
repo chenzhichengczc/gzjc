@@ -51,10 +51,10 @@ spring:
 
 #分页插件
 pagehelper:
-  dialect: mysql
   params: count=countSql
   reasonable: true
   support-methods-arguments: true
+  auto-dialect: mysql
 
 
 # mybatis
@@ -69,9 +69,6 @@ mybatis-plus:
 
 
 #logger 日志
+
 logging:
-  config: classpath:logback-boot.xml
-
-
-
-
+  config: classpath:log4j2-spring.xml

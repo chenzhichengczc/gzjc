@@ -3,6 +3,8 @@ package com.jc.modules.information.controller;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.jc.common.utils.ResponseUtil;
 import com.jc.modules.information.entity.InformationEntity;
 import com.jc.modules.information.service.InformationService;
@@ -38,6 +40,15 @@ public class InformationController {
         EntityWrapper<InformationEntity> entityEntityWrapper = new EntityWrapper<>();
         List<InformationEntity> pageList = informationService.findByPage(page, entityEntityWrapper);
         return ResponseUtil.success(pageList);
+    }
+
+
+    @RequestMapping(value = "/pageList",method = RequestMethod.GET)
+    public ResponseUtil findPage(int pageNo,int pageSize){
+        PageHelper.startPage(pageNo, pageSize);
+        List<InformationEntity> informationEntities = informationService.selectPage();
+        PageInfo<InformationEntity> pageInfo = new PageInfo<>(informationEntities);
+        return ResponseUtil.success(pageInfo);
     }
 
 

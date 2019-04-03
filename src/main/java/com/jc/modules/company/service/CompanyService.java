@@ -1,6 +1,7 @@
 package com.jc.modules.company.service;
 
 import com.jc.modules.company.entity.Company;
+import com.jc.modules.information.entity.InformationEntity;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,5 +14,6 @@ import org.springframework.stereotype.Service;
 public interface CompanyService {
 
     public Company getCompanyMessage();
+    void updateInfoById(InformationEntity informationEntity);
 
 }

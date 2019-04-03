@@ -70,6 +70,7 @@ public class RedisAop {
             }
             return proceed;
         }
+
         //从缓存中获取数据
         Object cacheBytes = redisUtil.get(key);
         System.out.println("cacheBytes = " + cacheBytes);
@@ -84,7 +85,7 @@ public class RedisAop {
     public void cleanCacheAround(ProceedingJoinPoint joinPoint) throws Throwable{
         System.out.println("joinPoint = [" + joinPoint + "]");
         Object object = joinPoint.proceed();
-        //获取当前AOP截取的类
+        //通过java反射获取当前AOP截取的类
         Class clazz = Class.forName(joinPoint.getTarget().getClass().getName());
         //获取当前类所有的方法
         Method[] methods = clazz.getMethods();

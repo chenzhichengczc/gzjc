@@ -20,17 +20,17 @@ public class BasicEntity implements Serializable {
 
     @ApiModelProperty(value = "创建时间",name = "createTime")
     @TableField(value = "create_time")
-    private Date createTime = new Date();
+    private Date createTime;
 
     @ApiModelProperty(value = "创建人",name = "createBy")
     @TableField(value = "create_by")
-    private  String createBy = "Charles";
+    private  String createBy;
 
-    @ApiModelProperty(value = "修改时间",name = "proUpdateTime")
+    @ApiModelProperty(value = "修改时间",name = "updateTime")
     @TableField(value = "update_time")
-    private  Date updateTime = new Date();
+    private  Date updateTime;
 
-    @ApiModelProperty(value = "修改人",name = "proUpdateBy")
+    @ApiModelProperty(value = "修改人",name = "updateBy")
     @TableField(value = "update_by")
-    private  String updateBy = "Charles";
+    private  String updateBy;
 }
