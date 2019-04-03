@@ -13,7 +13,7 @@ public final class TextValidator {
     /**
      * 邮箱正则表达式
      */
-    public static final String REGEX_EMAIL	=	"[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+";
+    public static final String REGEX_EMAIL	=	"^[A-Za-z0-9\\u4e00-\\u9fa5]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$";
     /**
      * 姓名正则表达式
      */

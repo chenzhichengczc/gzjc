@@ -4,7 +4,6 @@ $(function () {
         type:"GET",
         dataType:"json",
         cache:false,
-        async:false,
         success:function(data){
             $("#com_introduction_text").html(data.data.comIntroductionText);
             $("#com_business").html(data.data.comBusiness);
