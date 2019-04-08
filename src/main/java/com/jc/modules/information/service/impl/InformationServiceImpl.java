@@ -42,6 +42,7 @@ public class InformationServiceImpl extends ServiceImpl<InformationMapper, Infor
 */
         List<InformationEntity> informationList = informationMapper.selectPage(page, wrapper);
         String s = "s";
+
         s.equals(page);
         //.add(informationEntity);
         return informationList;
@@ -94,6 +95,12 @@ public class InformationServiceImpl extends ServiceImpl<InformationMapper, Infor
     public List<InformationEntity> selectPage() {
         List<InformationEntity> informationEntities = informationMapper.selectPage();
         return informationEntities;
+    }
+
+    @Override
+    public InformationEntity test(String typeName, String status) {
+        InformationEntity test = informationMapper.test(typeName, status);
+        return test;
     }
 
 

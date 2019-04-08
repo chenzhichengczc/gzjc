@@ -9,6 +9,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.io.Serializable;
+
 
 /**
  * @author ：fenghuang
@@ -20,7 +22,7 @@ import lombok.Data;
 @TableName("jc_information")
 @Data
 @ApiModel("资讯核心表")
-public class InformationEntity extends BasicEntity {
+public class InformationEntity implements Serializable {
 
     @TableId(type = IdType.AUTO)
     @ApiModelProperty(value = "主键",name = "id")

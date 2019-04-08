@@ -3,6 +3,7 @@ package com.jc.modules.information.mapper;
 
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.jc.modules.information.entity.InformationEntity;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -19,5 +20,7 @@ public interface InformationMapper extends BaseMapper<InformationEntity> {
    boolean insertBatch(List<InformationEntity> list);
 
    List<InformationEntity> selectPage();
+
+   InformationEntity test(@Param(value = "typeName") String typeName,@Param(value = "status") String status);
 
 }

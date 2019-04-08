@@ -87,4 +87,10 @@ public class InformationController {
         return ResponseUtil.success();
     }
 
+    @RequestMapping(value = "/test",method = RequestMethod.GET)
+    public ResponseUtil test(String typeName,String status){
+        InformationEntity test = informationService.test(typeName, status);
+        return ResponseUtil.success(test);
+    }
+
 }

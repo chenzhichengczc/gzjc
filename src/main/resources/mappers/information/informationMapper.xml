@@ -9,10 +9,6 @@
         <result column="type_name" property="typeName"/>
         <result column="status" property="status"/>
         <result column="is_parent" property="isParent"/>
-        <result column="create_time" property="createTime"/>
-        <result column="create_by" property="createBy"/>
-        <result column="update_time" property="updateTime"/>
-        <result column="update_by" property="updateBy"/>
     </resultMap>
     <select id="selectPage" resultMap="resultMap">
         SELECT * FROM jc_information
@@ -25,4 +21,8 @@
             (#{item.typeName},#{item.status},#{item.isParent},#{item.createTime},#{item.createBy},#{item.updateTime},#{item.updateBy})
         </foreach>
     </insert>
+
+    <select id="test" resultMap="resultMap">
+        SELECT * FROM jc_information where type_name = #{typeName} AND status = #{status}
+    </select>
 </mapper>

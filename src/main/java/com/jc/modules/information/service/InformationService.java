@@ -39,4 +39,6 @@ public interface InformationService extends IService<InformationEntity> {
 
     List<InformationEntity> selectPage();
 
+    InformationEntity test(String typeName, String status);
+
 }
