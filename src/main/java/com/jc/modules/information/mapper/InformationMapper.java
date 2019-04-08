@@ -5,10 +5,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.jc.modules.information.entity.InformationDetailEntity;
 import com.jc.modules.information.entity.InformationEntity;
 import org.apache.ibatis.annotations.Param;
-<<<<<<< HEAD
-=======
 import org.apache.ibatis.annotations.Select;
->>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
 
 import java.util.List;
 
@@ -28,7 +25,6 @@ public interface InformationMapper extends BaseMapper<InformationEntity> {
     */
    List<InformationDetailEntity> findAll();
 
-<<<<<<< HEAD
    /*
       pageHelper分页
     */
@@ -36,13 +32,8 @@ public interface InformationMapper extends BaseMapper<InformationEntity> {
 
    @Select("select * from jc_information where status = 0")
    List<InformationEntity> getCatalogy();
-=======
    List<InformationEntity> selectPage();
 
-<<<<<<< HEAD
    InformationEntity test(@Param(value = "typeName") String typeName,@Param(value = "status") String status);
 
-=======
->>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
->>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
 }

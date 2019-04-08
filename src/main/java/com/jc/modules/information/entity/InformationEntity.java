@@ -8,12 +8,9 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-<<<<<<< HEAD
 import java.io.Serializable;
 
 
-=======
->>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
 /**
  * @author ：fenghuang
  * @date ：Created in 2019/3/12 16:59
@@ -24,13 +21,9 @@ import java.io.Serializable;
 @TableName("jc_information")
 @Data
 @ApiModel("资讯核心表")
-<<<<<<< HEAD
 public class InformationEntity implements Serializable {
-=======
-public class InformationEntity {
     //添加InformationDetailEntity实体类以便关联
     private InformationDetailEntity informationDetail;
->>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
 
     @TableId(type = IdType.AUTO)
     @ApiModelProperty(value = "主键",name = "id")

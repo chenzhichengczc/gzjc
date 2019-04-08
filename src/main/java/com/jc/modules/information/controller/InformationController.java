@@ -5,10 +5,7 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-<<<<<<< HEAD
 import com.jc.common.json.JsonResult;
-=======
->>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
 import com.jc.common.utils.ResponseUtil;
 import com.jc.modules.information.entity.InformationDetailEntity;
 import com.jc.modules.information.entity.InformationEntity;
@@ -72,9 +69,7 @@ public class InformationController {
         return ResponseUtil.success(pageList);
     }
 
-<<<<<<< HEAD
-    @RequestMapping(value = "/getId",method = RequestMethod.GET)
-=======
+    //@RequestMapping(value = "/getId",method = RequestMethod.GET)
 
     @RequestMapping(value = "/pageList",method = RequestMethod.GET)
     public ResponseUtil findPage(int pageNo,int pageSize){
@@ -86,7 +81,6 @@ public class InformationController {
 
 
     @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
->>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
     @ApiOperation(value = "获取单个资讯核心类型",notes = "资讯查询")
     public ResponseUtil selectById(@PathVariable Integer id){
         InformationEntity informationEntity = informationService.selectById(id);
@@ -121,13 +115,12 @@ public class InformationController {
         return ResponseUtil.success();
     }
 
-<<<<<<< HEAD
+
     @RequestMapping(value = "/test",method = RequestMethod.GET)
-    public ResponseUtil test(String typeName,String status){
+    public ResponseUtil test(String typeName,String status) {
         InformationEntity test = informationService.test(typeName, status);
         return ResponseUtil.success(test);
     }
-=======
->>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
+
 
 }
