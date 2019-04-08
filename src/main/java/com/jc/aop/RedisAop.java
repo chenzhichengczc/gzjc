@@ -56,6 +56,9 @@ public class RedisAop {
         RedisCache annotation = methodSignature.getMethod().getAnnotation(RedisCache.class);
         //获取注解key的值
         String key = annotation.key();
+        if(key == null || key == ""){
+            throw new JcException("后台需要设置缓存的键");
+        }
         if(key.isEmpty()){
             logger.info("RedisCache注解传入的key为空");
         } 

@@ -5,9 +5,17 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+<<<<<<< .mine
 
+=======
+
+>>>>>>> .theirs
 import com.jc.common.json.JsonResult;
+<<<<<<< .mine
 
+=======
+
+>>>>>>> .theirs
 import com.jc.common.utils.ResponseUtil;
 import com.jc.modules.information.entity.InformationDetailEntity;
 import com.jc.modules.information.entity.InformationEntity;
@@ -71,6 +79,13 @@ public class InformationController {
         return ResponseUtil.success(pageList);
     }
 
+<<<<<<< .mine
+
+
+=======
+    //@RequestMapping(value = "/getId",method = RequestMethod.GET)
+
+>>>>>>> .theirs
     @RequestMapping(value = "/pageList",method = RequestMethod.GET)
     public ResponseUtil findPage(int pageNo,int pageSize){
         PageHelper.startPage(pageNo, pageSize);
@@ -113,6 +128,13 @@ public class InformationController {
     public ResponseUtil deleteInfoById(@PathVariable Integer id){
         informationService.deleteInfoById(id);
         return ResponseUtil.success();
+    }
+
+
+    @RequestMapping(value = "/test",method = RequestMethod.GET)
+    public ResponseUtil test(String typeName,String status) {
+        InformationEntity test = informationService.test(typeName, status);
+        return ResponseUtil.success(test);
     }
 
 
