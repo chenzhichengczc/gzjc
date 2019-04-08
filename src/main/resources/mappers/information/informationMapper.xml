@@ -22,11 +22,10 @@
         </foreach>
     </insert>
 
-<<<<<<< HEAD
     <select id="test" resultMap="resultMap">
         SELECT * FROM jc_information where type_name = #{typeName} AND status = #{status}
     </select>
-=======
+
     <!--分页-->
     <select id="getList" resultMap="information">
         select jid.*,ji.*
@@ -61,6 +60,5 @@
     </resultMap>
 
     <!--查询文章栏目表分类下的文章-->
-
->>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
+    
 </mapper>

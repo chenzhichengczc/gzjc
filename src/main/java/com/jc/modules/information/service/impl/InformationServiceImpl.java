@@ -5,23 +5,13 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jc.common.annotation.RedisCache;
 import com.jc.common.exception.JcException;
 import com.jc.modules.information.entity.InformationDetailEntity;
-<<<<<<< .mine
 
-
-=======
-
-
->>>>>>> .theirs
 import com.jc.modules.information.entity.InformationEntity;
 import com.jc.modules.information.mapper.InformationMapper;
 import com.jc.modules.information.service.InformationService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
-<<<<<<< .mine
 
-=======
-
->>>>>>> .theirs
 import java.util.List;
 
 /**
@@ -38,11 +28,6 @@ public class InformationServiceImpl extends ServiceImpl<InformationMapper, Infor
     @Resource
     private InformationMapper informationMapper;
 
-<<<<<<< .mine
-
-=======
-
->>>>>>> .theirs
     /*
        查询Information与InformationDetail两表全部内容
      */

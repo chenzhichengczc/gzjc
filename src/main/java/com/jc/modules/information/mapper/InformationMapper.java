@@ -25,11 +25,6 @@ public interface InformationMapper extends BaseMapper<InformationEntity> {
     */
    List<InformationDetailEntity> findAll();
 
-<<<<<<< .mine
-
-=======
-
->>>>>>> .theirs
    /*
       pageHelper分页
     */
@@ -37,18 +32,9 @@ public interface InformationMapper extends BaseMapper<InformationEntity> {
 
    @Select("select * from jc_information where status = 0")
    List<InformationEntity> getCatalogy();
-<<<<<<< .mine
 
-=======
-
->>>>>>> .theirs
    List<InformationEntity> selectPage();
 
-<<<<<<< .mine
-
-
-=======
    InformationEntity test(@Param(value = "typeName") String typeName,@Param(value = "status") String status);
 
->>>>>>> .theirs
 }
