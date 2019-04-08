@@ -4,6 +4,7 @@ package com.jc.modules.information.service;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
+import com.jc.modules.information.entity.InformationDetailEntity;
 import com.jc.modules.information.entity.InformationEntity;
 
 import java.util.List;
@@ -26,7 +27,7 @@ public interface InformationService extends IService<InformationEntity> {
      * @date ：Created in 2019/3/13 14:36
      */
     List<InformationEntity> findByPage(Page<InformationEntity> page, Wrapper<InformationEntity> wrapper);
-
+    //分页
     InformationEntity selectById(Integer id);
 
     void insertInfo(InformationEntity informationEntity);
@@ -37,8 +38,29 @@ public interface InformationService extends IService<InformationEntity> {
 
     void deleteInfoById(Integer id);
 
-    List<InformationEntity> selectPage();
+<<<<<<< HEAD
+    /**
+     * 查询资讯核心和资讯详情表的全部内容
+     *
+     * @param ：查找Information和InformationDetail两表内容
+     * @return :
+     * @author ：Mr.Chan
+     * @date ：Created in 2019/3/13 15:20
+     */
+    List<InformationDetailEntity> findAll();
 
+    /**
+     * 使用pagehelper分页
+     */
+    List<InformationDetailEntity> getList(int categoryId);
+=======
+    List<InformationEntity> selectPage();
+>>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
+
+<<<<<<< HEAD
     InformationEntity test(String typeName, String status);
 
+=======
+    List<InformationEntity> getCatalogy();
+>>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
 }

@@ -5,17 +5,20 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+<<<<<<< HEAD
+import com.jc.common.json.JsonResult;
+=======
+>>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
 import com.jc.common.utils.ResponseUtil;
+import com.jc.modules.information.entity.InformationDetailEntity;
 import com.jc.modules.information.entity.InformationEntity;
 import com.jc.modules.information.service.InformationService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.server.ServerEndpoint;
 import java.util.List;
 
 /**
@@ -33,6 +36,33 @@ public class InformationController {
     @Autowired
     private InformationService informationService;
 
+    //分页
+    @RequestMapping(value = "/paging",method=RequestMethod.GET)
+    public ResponseUtil getInformationAndDetailList(int pageNum, int pageSize ,int categoryId){
+        //使用分页插件
+        PageHelper.startPage(pageNum, pageSize);
+        List<InformationDetailEntity> paging=informationService.getList(categoryId);
+        PageInfo<InformationDetailEntity> pageInfo=new PageInfo<>(paging);
+        return ResponseUtil.success(pageInfo);
+    }
+
+    @RequestMapping(value = "/getCatalogy",method = RequestMethod.GET)
+    public ResponseUtil getCatalogy(){
+        List<InformationEntity> strlist = informationService.getCatalogy();
+        return ResponseUtil.success(strlist);
+
+    }
+
+    //查询资讯两表内容
+    @RequestMapping(value = "/findInformationAndDetail",method = RequestMethod.GET)
+    @ResponseBody
+    public JsonResult findInformationAndDetail(){
+        List<InformationDetailEntity> informationDetailEntityList =informationService.findAll();
+        JsonResult jsonResult = new JsonResult();
+        jsonResult.setData(informationDetailEntityList);
+        return jsonResult;
+    }
+
     @RequestMapping(value = "/list",method = RequestMethod.GET)
     @ApiOperation(value = "资讯核心列表查询", notes = "列表查询")
     public ResponseUtil findInformationList(int pageNo,int pageSize){
@@ -42,6 +72,9 @@ public class InformationController {
         return ResponseUtil.success(pageList);
     }
 
+<<<<<<< HEAD
+    @RequestMapping(value = "/getId",method = RequestMethod.GET)
+=======
 
     @RequestMapping(value = "/pageList",method = RequestMethod.GET)
     public ResponseUtil findPage(int pageNo,int pageSize){
@@ -53,6 +86,7 @@ public class InformationController {
 
 
     @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
+>>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
     @ApiOperation(value = "获取单个资讯核心类型",notes = "资讯查询")
     public ResponseUtil selectById(@PathVariable Integer id){
         InformationEntity informationEntity = informationService.selectById(id);
@@ -87,10 +121,13 @@ public class InformationController {
         return ResponseUtil.success();
     }
 
+<<<<<<< HEAD
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     public ResponseUtil test(String typeName,String status){
         InformationEntity test = informationService.test(typeName, status);
         return ResponseUtil.success(test);
     }
+=======
+>>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
 
 }

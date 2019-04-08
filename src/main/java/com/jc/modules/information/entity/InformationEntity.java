@@ -4,14 +4,16 @@ package com.jc.modules.information.entity;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.enums.IdType;
-import com.jc.basic.BasicEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+<<<<<<< HEAD
 import java.io.Serializable;
 
 
+=======
+>>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
 /**
  * @author ：fenghuang
  * @date ：Created in 2019/3/12 16:59
@@ -22,7 +24,13 @@ import java.io.Serializable;
 @TableName("jc_information")
 @Data
 @ApiModel("资讯核心表")
+<<<<<<< HEAD
 public class InformationEntity implements Serializable {
+=======
+public class InformationEntity {
+    //添加InformationDetailEntity实体类以便关联
+    private InformationDetailEntity informationDetail;
+>>>>>>> 8f5bc02778c5526b9ca864bb635e78b19b7173fb
 
     @TableId(type = IdType.AUTO)
     @ApiModelProperty(value = "主键",name = "id")
@@ -36,7 +44,5 @@ public class InformationEntity implements Serializable {
 
     @ApiModelProperty(value = "父类;判断是否该类目是否为父类目，- 0为父类 - 1 不为父类",name = "is_Parent")
     private Integer isParent;
-
-
 
 }

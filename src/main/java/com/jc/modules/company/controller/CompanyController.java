@@ -25,5 +25,4 @@ public class CompanyController {
         Company companyMessage = companyService.getCompanyMessage();
         return ResponseUtil.success(companyMessage);
     }
-
 }

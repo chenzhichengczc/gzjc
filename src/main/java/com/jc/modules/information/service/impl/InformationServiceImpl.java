@@ -6,12 +6,14 @@ import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jc.common.annotation.RedisCache;
 import com.jc.common.exception.JcException;
+<<<<<<< HEAD
+import com.jc.modules.information.entity.InformationDetailEntity;
+=======
 import com.jc.modules.company.service.CompanyService;
+>>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
 import com.jc.modules.information.entity.InformationEntity;
 import com.jc.modules.information.mapper.InformationMapper;
 import com.jc.modules.information.service.InformationService;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -26,12 +28,38 @@ import java.util.List;
  * @version:
  */
 @Service
-public class InformationServiceImpl extends ServiceImpl<InformationMapper, InformationEntity> implements InformationService {
+public class InformationServiceImpl extends ServiceImpl<InformationMapper, InformationEntity>
+        implements InformationService {
 
     @Resource
     private InformationMapper informationMapper;
 
+<<<<<<< HEAD
+    /*
+       查询Information与InformationDetail两表全部内容
+     */
+    @Override
+    public List<InformationDetailEntity> findAll(){
+        List<InformationDetailEntity> information=informationMapper.findAll();
+        return information;
+    }
+
+    @Override
+    public List<InformationDetailEntity> getList(int categoryId){
+        List<InformationDetailEntity> typeList=informationMapper.getList(categoryId);
+        return typeList;
+    }
+
+    @Override
+    public List<InformationEntity> getCatalogy() {
+        return informationMapper.getCatalogy();
+    }
+
+    //分页
+    @Override
+=======
     @RedisCache(key = "pub:cache_key_in_information_list",time = 1000)
+>>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
     public List<InformationEntity> findByPage(Page<InformationEntity> page, Wrapper<InformationEntity> wrapper) {
        /* InformationEntity informationEntity = new InformationEntity();
         informationEntity.setTypeName("hello11");

@@ -9,11 +9,22 @@ html {
 	overflow-x:hidden;
 }
 
+/*资讯页文章处样式左移动*/
+.passage_content{
+	position:relative;
+	right: 78px;
+}
+/*资讯分页向左移动*/
+.wp-pagenavi style--middleArea FS--16{
+	position:relative;
+	right: 85px;
+}
 body {
 	font-family: 'Raleway', sans-serif;
 	color: #666666;
 	font-size: 16px;
 	font-weight: 400;
+	background-color: #eee;
 }
 
 ul {
