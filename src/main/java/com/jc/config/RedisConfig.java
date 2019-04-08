@@ -34,6 +34,6 @@ public class RedisConfig {
         jackson2JsonRedisSerializer.setObjectMapper(objectMapper);
         // value的序列化类型,使用了jackson方式
         redisTemplate.setValueSerializer(jackson2JsonRedisSerializer); // value的序列化类型
-        return redisTemplate;
+        return redisTemplate; 
     }
 }
