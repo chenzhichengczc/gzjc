@@ -241,9 +241,9 @@ a:focus,
 .mu-clients-slider .slick-next,
 .mu-clients-slider .slick-prev::before, 
 .mu-clients-slider .slick-next::before,
-.my-why-us-single-icon {
-	color: #0091ea;
-}
+/*.my-why-us-single-icon {*/
+	/*color: #0091ea;*/
+/*}*/
 
 
 .scrollToTop,

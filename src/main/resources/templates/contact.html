@@ -168,32 +168,32 @@
                                 <div class="col-md-12">
                                     <div class="mu-contact-form-area">
                                         <div id="form-messages"></div>
-                                        <form id="ajax-contact" method="POST" action="#" onsubmit="return false" role="form" class="mu-contact-form">
+                                        <form id="ajax-contact" method="post" action="#" role="form" class="mu-contact-form">
 
                                             <div class="form-group">
                                                 <span class="fa fa-user mu-contact-icon"></span>
                                                 <input type="text" class="form-control" placeholder="姓名" id="name"
                                                        name="username" required>
-                                                <div id="nameError"></div>
+                                                <div id="nameError" style="color: red"></div>
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="fa fa-pencil-square-o mu-contact-icon"></span>
                                                 <input type="text" class="form-control" placeholder="手机号码" id="phone"
                                                        name="phone" required>
-                                                <div id="phoneError"></div>
+                                                <div id="phoneError" style="color: red"></div>
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="fa fa-envelope mu-contact-icon"></span>
                                                 <div class="fat">
                                                     <input type="text" class="form-control" placeholder="邮箱" id="email"
-                                                           name="email" onkeyup="complete(this)" required>
+                                                           name="email"  required>
                                                     <div class="mail_box">
                                                         <ul class="hide" id="em">
                                                         </ul>
                                                     </div>
-                                                    <div id="emailError"></div>
+                                                    <div id="emailError" style="color: red"></div>
                                                 </div>
                                             </div>
 
@@ -211,7 +211,7 @@
                                                 <div id="messageError"></div>
                                             </div>
 
-                                            <input value="提交" type="submit" class="mu-send-msg-btn"/>
+                                            <input value="提交" type="button" class="mu-send-msg-btn"></input>
                                         </form>
                                     </div>
                                 </div>
