@@ -23,6 +23,7 @@ public class RedisConfig {
     public RedisTemplate<String, Object> getRedisTemplate(RedisConnectionFactory factory) {
         RedisTemplate<String, Object> redisTemplate = new RedisTemplate<String, Object>();
         redisTemplate.setConnectionFactory(factory);
+        // key的序列化类型,使用了StringRedisSerializer方式
         redisTemplate.setKeySerializer(new StringRedisSerializer()); // key的序列化类型
 
         Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
@@ -31,6 +32,7 @@ public class RedisConfig {
         objectMapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
 
         jackson2JsonRedisSerializer.setObjectMapper(objectMapper);
+        // value的序列化类型,使用了jackson方式
         redisTemplate.setValueSerializer(jackson2JsonRedisSerializer); // value的序列化类型
         return redisTemplate;
     }

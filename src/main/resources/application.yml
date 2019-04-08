@@ -59,12 +59,12 @@ mybatis-plus:
   type-aliases-package: com.jc.modules/*/entity
 
 
+#分页插件
+pagehelper:
+  auto-dialect: mysql
+  params: count=countSql
+  reasonable: true
+  support-methods-arguments: true
 
-
-#logger 日志
 logging:
-  config: classpath:logback-boot.xml
-
-
-
-
+  config: classpath:log4j2-spring.xml

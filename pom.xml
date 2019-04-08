@@ -40,16 +40,22 @@
         <joda.time.version>2.9.9</joda.time.version>
         <fastjson.version>1.2.47</fastjson.version>
         <hutool.version>4.1.1</hutool.version>
+        <pagehelper.version>1.2.5</pagehelper.version>
 
         <!--wagon plugin 配置-->
         <service-path>/work/renren</service-path>
         <pack-name>${project.artifactId}-${project.version}.jar</pack-name>
-        <remote-addr>192.168.1.10:22</remote-addr>
+       <!-- <remote-addr>192.168.1.10:22</remote-addr>
         <remote-username>root</remote-username>
-        <remote-passwd>123456</remote-passwd>
+        <remote-passwd>123456</remote-passwd>-->
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.5</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -82,8 +88,22 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -228,8 +248,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
-
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -257,7 +280,7 @@
                     <skipTests>true</skipTests>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>wagon-maven-plugin</artifactId>
                 <version>1.0</version>
@@ -265,17 +288,17 @@
                     <fromFile>target/${pack-name}</fromFile>
                     <url><![CDATA[scp://${remote-username}:${remote-passwd}@${remote-addr}${service-path}]]></url>
                     <commands>
-                        <!-- Kill Old Process -->
+                        &lt;!&ndash; Kill Old Process &ndash;&gt;
                         <command>kill -9 `ps -ef |grep ${project.artifactId}.jar|grep -v "grep" |awk '{print $2}'`</command>
-                        <!-- Restart jar package，write result into renren.log -->
-                        <command><![CDATA[nohup java -jar ${service-path}/${pack-name} --spring.profiles.active=test > ${service-path}/renren.log 2>&1 & ]]></command>
+                        &lt;!&ndash; Restart jar package，write result into renren.log &ndash;&gt;
+                        <command><![CDATA[nohup java -jar ${service-path}/${pack-name} &#45;&#45;spring.profiles.active=test > ${service-path}/renren.log 2>&1 & ]]></command>
                         <command><![CDATA[netstat -nptl]]></command>
                         <command><![CDATA[ps -ef | grep java | grep -v grep]]></command>
                     </commands>
-                    <!-- 运行命令 mvn clean package wagon:upload-single wagon:sshexec-->
+                    &lt;!&ndash; 运行命令 mvn clean package wagon:upload-single wagon:sshexec&ndash;&gt;
                     <displayCommandOutputs>true</displayCommandOutputs>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
             <plugin>
                 <groupId>com.spotify</groupId>
@@ -328,6 +351,5 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
 
 </project>

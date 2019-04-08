@@ -7,16 +7,13 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
-import org.aspectj.util.GenericSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
 /**
@@ -35,9 +32,15 @@ public class RedisAop {
     @Autowired
     private RedisUtil redisUtil;
 
+    /**
+     *  给所有使用RedisCache注解的方法设置切点
+     */
     @Pointcut("@annotation(com.jc.common.annotation.RedisCache)")
     public void redisCache(){}
 
+    /**
+     *  给所有业务的数据的插入，更新，删除设置切点
+     */
     @Pointcut("execution(* com.jc.modules.*.service..*.insert*(..)) || " +
               "execution(* com.jc.modules.*.service..*.batch*(..)) || " +
               "execution(* com.jc.modules.*.service..*.update*(..)) || " +
@@ -46,12 +49,16 @@ public class RedisAop {
 
     @Around("redisCache()")
     public Object around(ProceedingJoinPoint joinPoint)throws Throwable{
+        System.out.println("RedisAop.around");
         Signature signature = joinPoint.getSignature();
         MethodSignature methodSignature = (MethodSignature) signature;
         //获取注解类
         RedisCache annotation = methodSignature.getMethod().getAnnotation(RedisCache.class);
         //获取注解key的值
         String key = annotation.key();
+        if(key == null || key == ""){
+            throw new JcException("后台需要设置缓存的键");
+        }
         if(key.isEmpty()){
             logger.info("RedisCache注解传入的key为空");
         } 
@@ -59,16 +66,17 @@ public class RedisAop {
         if(!redisUtil.hasKey(key)){
             Object proceed = joinPoint.proceed();
             //设置失效时间
-            long time = 60 * 60;
-            boolean isSetCache = redisUtil.set(key,proceed, time);
+            boolean isSetCache = redisUtil.set(key,proceed, annotation.time());
             if(!isSetCache){
                 logger.info("设置redis缓存失败");
                 return new JcException("设置redis缓存失败");
             }
             return proceed;
         }
+
         //从缓存中获取数据
         Object cacheBytes = redisUtil.get(key);
+        System.out.println("cacheBytes = " + cacheBytes);
         if(cacheBytes == null){
             logger.info("从redis缓存中获取数据失败");
             return new JcException("从redis缓存中获取数据失败");
@@ -80,7 +88,7 @@ public class RedisAop {
     public void cleanCacheAround(ProceedingJoinPoint joinPoint) throws Throwable{
         System.out.println("joinPoint = [" + joinPoint + "]");
         Object object = joinPoint.proceed();
-        //获取当前AOP截取的类
+        //通过java反射获取当前AOP截取的类
         Class clazz = Class.forName(joinPoint.getTarget().getClass().getName());
         //获取当前类所有的方法
         Method[] methods = clazz.getMethods();

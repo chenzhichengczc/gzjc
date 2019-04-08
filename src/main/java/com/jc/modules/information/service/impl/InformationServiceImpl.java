@@ -1,19 +1,17 @@
 package com.jc.modules.information.service.impl;
-
-
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jc.common.annotation.RedisCache;
 import com.jc.common.exception.JcException;
+import com.jc.modules.information.entity.InformationDetailEntity;
+
 import com.jc.modules.information.entity.InformationEntity;
 import com.jc.modules.information.mapper.InformationMapper;
 import com.jc.modules.information.service.InformationService;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.Resource;
+
 import java.util.List;
 
 /**
@@ -24,22 +22,55 @@ import java.util.List;
  * @version:
  */
 @Service
-public class InformationServiceImpl extends ServiceImpl<InformationMapper, InformationEntity> implements InformationService {
+public class InformationServiceImpl extends ServiceImpl<InformationMapper, InformationEntity>
+        implements InformationService {
 
     @Resource
     private InformationMapper informationMapper;
 
+    /*
+       查询Information与InformationDetail两表全部内容
+     */
+    @Override
+    public List<InformationDetailEntity> findAll(){
+        List<InformationDetailEntity> information=informationMapper.findAll();
+        return information;
+    }
 
-    @RedisCache(key = "pub:cache_key_in_information_list")
+    @Override
+    public List<InformationDetailEntity> getList(int categoryId){
+        List<InformationDetailEntity> typeList=informationMapper.getList(categoryId);
+        return typeList;
+    }
+
+    @Override
+    public List<InformationEntity> getCatalogy() {
+        return informationMapper.getCatalogy();
+    }
+
+    //分页
+    @Override
+    @RedisCache(key = "pub:cache_key_in_information_list",time = 1000)
     public List<InformationEntity> findByPage(Page<InformationEntity> page, Wrapper<InformationEntity> wrapper) {
+       /* InformationEntity informationEntity = new InformationEntity();
+        informationEntity.setTypeName("hello11");
+        informationEntity.setCreateTime(new Date());
+        informationEntity.setCreateBy("Rocky");
+        informationEntity.setUpdateTime(new Date());
+        informationEntity.setUpdateBy("Rocky");
+*/
         List<InformationEntity> informationList = informationMapper.selectPage(page, wrapper);
-        System.out.println("InformationServiceImpl.findByPage");
+        String s = "s";
+
+        s.equals(page);
+        //.add(informationEntity);
         return informationList;
     }
-    @RedisCache(key = "pub:cache_key_in_information")
+    @RedisCache(key = "pub:cache_key_in_information",time = 60)
     @Override
     public InformationEntity selectById(Integer id) {
         InformationEntity informationEntity = informationMapper.selectById(id);
+
         return informationEntity;
     }
 
@@ -66,6 +97,9 @@ public class InformationServiceImpl extends ServiceImpl<InformationMapper, Infor
         if(integer != 1){
             throw new JcException("更新资讯类型失败");
         }
+
+        System.out.println("InformationServiceImpl.updateInfoById");
+
     }
 
     @Override
@@ -74,6 +108,18 @@ public class InformationServiceImpl extends ServiceImpl<InformationMapper, Infor
         if(integer != 1){
             throw new JcException("删除资讯类型失败");
         }
+    }
+
+    @Override
+    public List<InformationEntity> selectPage() {
+        List<InformationEntity> informationEntities = informationMapper.selectPage();
+        return informationEntities;
+    }
+
+    @Override
+    public InformationEntity test(String typeName, String status) {
+        InformationEntity test = informationMapper.test(typeName, status);
+        return test;
     }
 
 
