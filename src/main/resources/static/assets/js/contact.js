@@ -27,6 +27,7 @@ var checkName = function () {
         if(element.val() != ''){
             if(pattern.test(element.val())){
                 element.css("border", "2px solid green");
+                document.getElementById("nameError").innerHTML = "";
                 flag = true;
             }else {
                 element.css("border", "2px solid red");
@@ -68,6 +69,7 @@ var checkEmail = function () {
        if(element.val() != ''){
            if(pattern.test(element.val())){
                element.css("border", "2px solid green");
+               document.getElementById("emailError").innerHTML = "";
                flag = true;
            }else {
                element.css("border", "2px solid red");
