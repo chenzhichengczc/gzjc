@@ -5,11 +5,10 @@ import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jc.common.exception.JcException;
+import com.jc.modules.information.entity.InformationDetailEntity;
 import com.jc.modules.information.entity.InformationEntity;
 import com.jc.modules.information.mapper.InformationMapper;
 import com.jc.modules.information.service.InformationService;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -23,11 +22,33 @@ import java.util.List;
  * @version:
  */
 @Service
-public class InformationServiceImpl extends ServiceImpl<InformationMapper, InformationEntity> implements InformationService {
+public class InformationServiceImpl extends ServiceImpl<InformationMapper, InformationEntity>
+        implements InformationService {
 
     @Resource
     private InformationMapper informationMapper;
 
+    /*
+       查询Information与InformationDetail两表全部内容
+     */
+    @Override
+    public List<InformationDetailEntity> findAll(){
+        List<InformationDetailEntity> information=informationMapper.findAll();
+        return information;
+    }
+
+    @Override
+    public List<InformationDetailEntity> getList(int categoryId){
+        List<InformationDetailEntity> typeList=informationMapper.getList(categoryId);
+        return typeList;
+    }
+
+    @Override
+    public List<InformationEntity> getCatalogy() {
+        return informationMapper.getCatalogy();
+    }
+
+    //分页
     @Override
     public List<InformationEntity> findByPage(Page<InformationEntity> page, Wrapper<InformationEntity> wrapper) {
         List<InformationEntity> informationList = informationMapper.selectPage(page, wrapper);

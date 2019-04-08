@@ -22,5 +22,4 @@ public class CompanyController {
     public JsonResult getCompanyMessage(){
         return new JsonResult(companyService.getCompanyMessage());
     }
-
 }
