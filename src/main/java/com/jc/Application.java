@@ -6,6 +6,7 @@ import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * @author ：fenghuang
@@ -17,6 +18,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @MapperScan("com.jc.modules.*.mapper")
 @SpringBootConfiguration
+@EnableTransactionManagement
 @EnableScheduling
 public class Application extends SpringBootServletInitializer {
 

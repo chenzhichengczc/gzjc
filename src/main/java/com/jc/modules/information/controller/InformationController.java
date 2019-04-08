@@ -5,7 +5,10 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+<<<<<<< HEAD
 import com.jc.common.json.JsonResult;
+=======
+>>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
 import com.jc.common.utils.ResponseUtil;
 import com.jc.modules.information.entity.InformationDetailEntity;
 import com.jc.modules.information.entity.InformationEntity;
@@ -69,7 +72,21 @@ public class InformationController {
         return ResponseUtil.success(pageList);
     }
 
+<<<<<<< HEAD
     @RequestMapping(value = "/getId",method = RequestMethod.GET)
+=======
+
+    @RequestMapping(value = "/pageList",method = RequestMethod.GET)
+    public ResponseUtil findPage(int pageNo,int pageSize){
+        PageHelper.startPage(pageNo, pageSize);
+        List<InformationEntity> informationEntities = informationService.selectPage();
+        PageInfo<InformationEntity> pageInfo = new PageInfo<>(informationEntities);
+        return ResponseUtil.success(pageInfo);
+    }
+
+
+    @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
+>>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
     @ApiOperation(value = "获取单个资讯核心类型",notes = "资讯查询")
     public ResponseUtil selectById(@PathVariable Integer id){
         InformationEntity informationEntity = informationService.selectById(id);
@@ -102,7 +119,6 @@ public class InformationController {
     public ResponseUtil deleteInfoById(@PathVariable Integer id){
         informationService.deleteInfoById(id);
         return ResponseUtil.success();
-
     }
 
 

@@ -1,8 +1,11 @@
 package com.jc.modules.company.service.impl;
 
+import com.jc.common.exception.JcException;
 import com.jc.modules.company.entity.Company;
 import com.jc.modules.company.mapper.CompanyMapper;
 import com.jc.modules.company.service.CompanyService;
+import com.jc.modules.information.entity.InformationEntity;
+import com.jc.modules.information.mapper.InformationMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,8 +26,22 @@ public class CompanyServiceImpl implements CompanyService {
     @Resource
     private CompanyMapper companyMapper;
 
+    @Resource
+    private InformationMapper informationMapper;
+
     @Override
     public Company getCompanyMessage() {
         return companyMapper.selectById(COM_CODE);
+    }
+
+    @Override
+    public void updateInfoById(InformationEntity informationEntity) {
+        Integer integer = informationMapper.updateById(informationEntity);
+        if(integer != 1){
+            throw new JcException("更新资讯类型失败");
+        }
+
+        System.out.println("InformationServiceImpl.updateInfoById");
+
     }
 }

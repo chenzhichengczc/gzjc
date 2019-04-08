@@ -1,20 +1,20 @@
 $(function() {
 
-	// Get the form.
+	// 获得表单.
 	var form = $('#ajax-contact');
 
-	// Get the messages div.
+	// 获得div里的信息.
 	var formMessages = $('#form-messages');
 
-	// Set up an event listener for the contact form.
+	// 为联系人表单设置事件侦听器.
 	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
+		// 停止浏览器提交表单.
 		e.preventDefault();
 
-		// Serialize the form data.
+		// 序列化表单数据.
 		var formData = $(form).serialize();
 
-		// Submit the form using AJAX.
+		// 使用AJAX提交表单.
 		$.ajax({
 			type: 'POST',
 			url: $(form).attr('action'),
