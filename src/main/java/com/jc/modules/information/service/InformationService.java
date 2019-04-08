@@ -38,7 +38,7 @@ public interface InformationService extends IService<InformationEntity> {
 
     void deleteInfoById(Integer id);
 
-<<<<<<< HEAD
+
     /**
      * 查询资讯核心和资讯详情表的全部内容
      *
@@ -53,9 +53,9 @@ public interface InformationService extends IService<InformationEntity> {
      * 使用pagehelper分页
      */
     List<InformationDetailEntity> getList(int categoryId);
-=======
+
     List<InformationEntity> selectPage();
->>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
+
 
     List<InformationEntity> getCatalogy();
 }

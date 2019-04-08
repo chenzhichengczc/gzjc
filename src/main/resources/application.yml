@@ -49,12 +49,12 @@ spring:
   thymeleaf:
     cache: false
 
-#分页插件
-pagehelper:
-  params: count=countSql
-  reasonable: true
-  support-methods-arguments: true
-  auto-dialect: mysql
+##分页插件
+#pagehelper:
+#  params: count=countSql
+#  reasonable: true
+#  support-methods-arguments: true
+#  auto-dialect: mysql
 
 
 # mybatis
@@ -66,10 +66,10 @@ mybatis-plus:
   type-aliases-package: com.jc.modules/*/entity
 
 
-#logger 日志
-<<<<<<< HEAD
-logging:
-  config: classpath:logback-boot.xml
+##logger 日志
+#
+#logging:
+#  config: classpath:logback-boot.xml
 
 
 #分页插件
@@ -78,8 +78,7 @@ pagehelper:
   params: count=countSql
   reasonable: true
   support-methods-arguments: true
-=======
->>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
+
 
 logging:
   config: classpath:log4j2-spring.xml

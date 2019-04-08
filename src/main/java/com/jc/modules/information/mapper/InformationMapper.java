@@ -25,7 +25,7 @@ public interface InformationMapper extends BaseMapper<InformationEntity> {
     */
    List<InformationDetailEntity> findAll();
 
-<<<<<<< HEAD
+
    /*
       pageHelper分页
     */
@@ -33,8 +33,8 @@ public interface InformationMapper extends BaseMapper<InformationEntity> {
 
    @Select("select * from jc_information where status = 0")
    List<InformationEntity> getCatalogy();
-=======
+
    List<InformationEntity> selectPage();
 
->>>>>>> f53de285fb7d2bc2c06347224ae1a37ed4103bea
+
 }
