@@ -21,47 +21,65 @@ $(function ($) {
 var flag = false;
 
 var checkName = function () {
+    var pattern = /^[\u4e00-\u9fa5A-Za-z]+(·[\u4e00-\u9fa5A-Za-z]+)*$/;
+    var element = $("#name");
     $("#name").on("blur",function () {
-        var pattern = /^[\u4e00-\u9fa5]+(·[\u4e00-\u9fa5]+)*$/;
-        var element = $("#name");
-        if(pattern.test(element.val())){
-            element.css("border", "2px solid green");
-            flag = true;
-        }else {
-            element.css("border", "2px solid red");
-            // document.getElementById("name").innerHTML = "用户名格式错误";
-            flag = false;
+        if(element.val() != ''){
+            if(pattern.test(element.val())){
+                element.css("border", "2px solid green");
+                document.getElementById("nameError").innerHTML = "";
+                flag = true;
+            }else {
+                element.css("border", "2px solid red");
+                document.getElementById("nameError").innerHTML = "用户名格式错误";
+                flag = false;
+            }
+        }else{
+            element.css({"border":"none","border-bottom":"#cccccc 1px solid"});
+            document.getElementById("nameError").innerHTML = "";
         }
     })
 }
 
 var checkPhone = function () {
+    var pattern = /((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199|(147))\d{8}/;
+    var element = $("#phone");
     $("#phone").on("blur",function () {
-        var pattern = /((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199|(147))\d{8}/;
-        var element = $("#phone");
-        if(pattern.test(element.val())){
-            element.css("border", "2px solid green");
-            flag = true;
-        }else {
-            element.css("border", "2px solid red");
-            // document.getElementById("phoneError").innerHTML = "手机号码格式错误";
-            flag = false;
+        if (element.val() != '') {
+            if (pattern.test(element.val())) {
+                element.css("border", "2px solid green");
+                document.getElementById("phoneError").innerHTML = "";
+                flag = true;
+            } else {
+                element.css("border", "2px solid red");
+                document.getElementById("phoneError").innerHTML = "手机号码格式错误";
+                flag = false;
+            }
+        }else{
+            element.css({"border":"none","border-bottom":"#cccccc 1px solid"});
+            document.getElementById("phoneError").innerHTML = "";
         }
     })
-}
+    }
 
 var checkEmail = function () {
+    var pattern = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+    var element = $("#email");
     $("#email").on("blur",function () {
-        var pattern = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
-        var element = $("#email");
-        if(pattern.test(element.val())){
-            element.css("border", "2px solid green");
-            flag = true;
-        }else {
-            element.css("border", "2px solid red");
-            // document.getElementById("emailError").innerHTML = "邮箱格式错误";
-            flag = false;
-        }
+       if(element.val() != ''){
+           if(pattern.test(element.val())){
+               element.css("border", "2px solid green");
+               document.getElementById("emailError").innerHTML = "";
+               flag = true;
+           }else {
+               element.css("border", "2px solid red");
+               document.getElementById("emailError").innerHTML = "邮箱格式错误";
+               flag = false;
+           }
+       }else{
+           element.css({"border":"none","border-bottom":"#cccccc 1px solid"});
+           document.getElementById("emailError").innerHTML = "";
+       }
     })
 }
 
@@ -71,16 +89,15 @@ var checkEmail = function () {
 var commit = function () {
     var url = "../user/insertUserInformation";
     var data = $("#ajax-contact").serialize();
+    console.log(data)
     $.ajax({
         url: url,
         data: data,
         type: "POST",
         dataType: "json",
         success: function (json) {
-            console.log(json);
             if(json.code == 0){
                 alert("我们会尽快联系您!")
-                location.href = "index.html"
             }
         }
     })
@@ -111,6 +128,7 @@ $(".mu-send-msg-btn").click(function () {
 /**
  * 邮箱打出@的时候补全
  * @type {Document}
+ * onkeyup="complete(this)"
  */
 // var d = document;
 // var ul = d.querySelector('.mail_box>ul');

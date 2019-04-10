@@ -12,8 +12,8 @@ server:
 spring:
   # 环境 dev|test|prod 开发/测试/上线
   profiles:
+#    active: test
     active: test
-#    active: dev
   # 热部署
   devtools:
     restart:
@@ -50,13 +50,6 @@ spring:
     cache: false
 
 
-##分页插件
-#pagehelper:
-#  params: count=countSql
-#  reasonable: true
-#  support-methods-arguments: true
-#  auto-dialect: mysql
-
 # mybatis
 mybatis-plus:
   configuration:
@@ -65,10 +58,6 @@ mybatis-plus:
   mapper-locations: classpath:mappers/*/*.xml
   type-aliases-package: com.jc.modules/*/entity
 
-##logger 日志
-#
-#logging:
-#  config: classpath:logback-boot.xml
 
 #分页插件
 pagehelper:
@@ -76,9 +65,6 @@ pagehelper:
   params: count=countSql
   reasonable: true
   support-methods-arguments: true
-
-
-#logger 日志
 
 logging:
   config: classpath:log4j2-spring.xml
