@@ -4,6 +4,7 @@ package com.jc.modules.information.entity;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.enums.IdType;
+import com.jc.basic.BasicEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -21,7 +22,7 @@ import java.io.Serializable;
 @TableName("jc_information")
 @Data
 @ApiModel("资讯核心表")
-public class InformationEntity implements Serializable {
+public class InformationEntity extends BasicEntity {
     //添加InformationDetailEntity实体类以便关联
     private InformationDetailEntity informationDetail;
 

@@ -48,7 +48,6 @@ public class InformationController {
     public ResponseUtil getCatalogy(){
         List<InformationEntity> strlist = informationService.getCatalogy();
         return ResponseUtil.success(strlist);
-
     }
 
     //查询资讯两表内容

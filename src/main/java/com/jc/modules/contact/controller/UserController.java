@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.text.ParseException;
+
 /**
  * @author : ChenHsingLou
  * @date : 2019/3/18 15:33
@@ -23,9 +25,9 @@ public class UserController {
     @Autowired
     private UserInformationService userInformationService;
 
-    @ResponseBody
+
     @RequestMapping("/insertUserInformation")
-    public ResponseUtil insertUserInformation(UserEntity userEntity) {
+    public ResponseUtil insertUserInformation(UserEntity userEntity) throws ParseException {
 
         userInformationService.insertInfo(userEntity);
 

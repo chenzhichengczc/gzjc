@@ -8,6 +8,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.util.Date;
+
 /**
  * @author : ChenHsingLou
  * @version :
@@ -38,5 +40,7 @@ public class UserEntity extends BasicEntity {
     @ApiModelProperty(value = "信息", name = "message")
     private String message;
 
+    @ApiModelProperty(value = "联系时间", name = "contact_time")
+    private Date contactTime;
 
 }
