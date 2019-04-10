@@ -99,6 +99,7 @@ var commit = function () {
             if(json.code == 0){
                 alert("我们会尽快联系您!")
                 $(".form-control").val("");
+                $(".form-control").css({"border":"none","border-bottom":"#cccccc 1px solid"});
             }
         }
     })
