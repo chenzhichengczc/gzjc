@@ -300,18 +300,18 @@
                 </configuration>
             </plugin>-->
 
-            <plugin>
+            <!--<plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.14</version>
-                <!--<executions>-->
-                <!--<execution>-->
-                <!--<phase>package</phase>-->
-                <!--<goals>-->
-                <!--<goal>build</goal>-->
-                <!--</goals>-->
-                <!--</execution>-->
-                <!--</executions>-->
+                &lt;!&ndash;<executions>&ndash;&gt;
+                &lt;!&ndash;<execution>&ndash;&gt;
+                &lt;!&ndash;<phase>package</phase>&ndash;&gt;
+                &lt;!&ndash;<goals>&ndash;&gt;
+                &lt;!&ndash;<goal>build</goal>&ndash;&gt;
+                &lt;!&ndash;</goals>&ndash;&gt;
+                &lt;!&ndash;</execution>&ndash;&gt;
+                &lt;!&ndash;</executions>&ndash;&gt;
                 <configuration>
                     <imageName>renren/fast</imageName>
                     <dockerDirectory>${project.basedir}</dockerDirectory>
@@ -323,8 +323,8 @@
                         </resource>
                     </resources>
                 </configuration>
-                <!-- 运行命令 mvn clean package docker:build 打包并生成docker镜像 -->
-            </plugin>
+                &lt;!&ndash; 运行命令 mvn clean package docker:build 打包并生成docker镜像 &ndash;&gt;
+            </plugin>-->
         </plugins>
     </build>
 

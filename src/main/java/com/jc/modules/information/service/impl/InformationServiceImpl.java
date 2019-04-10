@@ -44,13 +44,14 @@ public class InformationServiceImpl extends ServiceImpl<InformationMapper, Infor
     }
 
     @Override
+    @RedisCache(key = "pub:cache_key_in_information_list",time = 3600)
     public List<InformationEntity> getCatalogy() {
         return informationMapper.getCatalogy();
     }
 
     //分页
     @Override
-    @RedisCache(key = "pub:cache_key_in_information_list",time = 1000)
+    @RedisCache(key = "pub:cache_key_in_information_list",time = 60)
     public List<InformationEntity> findByPage(Page<InformationEntity> page, Wrapper<InformationEntity> wrapper) {
        /* InformationEntity informationEntity = new InformationEntity();
         informationEntity.setTypeName("hello11");
