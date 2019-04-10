@@ -38,4 +38,15 @@ public class InformationEntity implements Serializable {
     @ApiModelProperty(value = "父类;判断是否该类目是否为父类目，- 0为父类 - 1 不为父类",name = "is_Parent")
     private Integer isParent;
 
+   /* @ApiModelProperty(value = "创建时间",name = "createTime")
+    private Data createTime;
+
+    @ApiModelProperty(value = "创建人",name = "createBy")
+    private String createBy;
+
+    @ApiModelProperty(value = "更改时间",name = "updateTime")
+    private Data updateTime;
+
+    @ApiModelProperty(value = "更改人",name = "updateBy")
+    private String updateBy;*/
 }

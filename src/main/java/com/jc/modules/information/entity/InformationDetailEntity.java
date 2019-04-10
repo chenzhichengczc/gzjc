@@ -44,6 +44,7 @@ public class InformationDetailEntity  extends BasicEntity{
     @ApiModelProperty(value = "资讯来源渠道",name = "channel")
     private Integer channel;
 
+
     private InformationEntity informationEntity;
 
 }
