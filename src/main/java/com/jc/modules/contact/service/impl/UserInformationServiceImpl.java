@@ -18,7 +18,7 @@ public class UserInformationServiceImpl extends ServiceImpl<UserInformationMappe
 
     @Override
     public void insertInfo(UserEntity userEntity) {
-        if (!TextValidator.checkName(userEntity.getUsername())) {
+        if (!TextValidator.checkName(userEntity.getName())) {
             throw new JcException("名字格式错误");
         } else if (!TextValidator.checkPhone(userEntity.getPhone())) {
             throw new JcException("号码格式错误");

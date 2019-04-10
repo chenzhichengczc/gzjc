@@ -98,6 +98,7 @@ var commit = function () {
         success: function (json) {
             if(json.code == 0){
                 alert("我们会尽快联系您!")
+                $(".form-control").text("")
             }
         }
     })
@@ -110,7 +111,7 @@ $(".mu-send-msg-btn").click(function () {
     var a = $("#name").val();
     var b = $("#phone").val();
     var c = $("#email").val();
-    var d = $("#occupation").val();
+    var d = $("#job").val();
     var e = $("#message").val();
     if (a == null || a == undefined || a == "") {
         alert("名字不能为空");
