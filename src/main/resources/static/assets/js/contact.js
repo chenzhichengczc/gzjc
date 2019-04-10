@@ -98,7 +98,7 @@ var commit = function () {
         success: function (json) {
             if(json.code == 0){
                 alert("我们会尽快联系您!")
-                $(".form-control").text("")
+                $(".form-control").val("");
             }
         }
     })
