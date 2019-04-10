@@ -9,9 +9,13 @@
         <result column="type_name" property="typeName"/>
         <result column="status" property="status"/>
         <result column="is_parent" property="isParent"/>
+        <result column="create_time" property="createTime"/>
+        <result column="create_by" property="createBy"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="update_by" property="updateBy"/>
     </resultMap>
     <select id="selectPage" resultMap="resultMap">
-        SELECT * FROM jc_information
+        SELECT ji.id,ji.type_name,ji.status ji.is_parent FROM jc_information ji
     </select>
 
     <insert id="insertBatch" parameterType="ArrayList">
@@ -27,16 +31,18 @@
     </select>
     <!--分页-->
     <select id="getList" resultMap="information">
-        select jid.*,ji.*
+        select jid.detail_id,jid.category_id,jid.image,jid.keyword,jid.click,jid.brief,jid.text,jid.channel,jid.create_time,
+        ji.id,ji.type_name,ji.status,ji.is_parent
         from jc_information ji
         LEFT JOIN
-        (select * from jc_information_detail) jid
+        jc_information_detail jid
          on ji.id = jid.category_id
         <if test="categoryId != 0">
             where jid.category_id = #{categoryId}
         </if>
-         order by update_time desc
+         order by jid.update_time desc
     </select>
+
     <resultMap id="information" type="com.jc.modules.information.entity.InformationDetailEntity" autoMapping="true">
         <id column="detail_id" property="detailId"/>
         <result column="category_id" property="categoryId"/>
@@ -55,6 +61,10 @@
             <result column="type_name" property="typeName"/>
             <result column="status" property="status"/>
             <result column="is_parent" property="isParent"/>
+            <result column="create_time" property="createTime"/>
+            <result column="create_by" property="createBy"/>
+            <result column="update_time" property="updateTime"/>
+            <result column="update_by" property="updateBy"/>
         </association>
     </resultMap>
 
