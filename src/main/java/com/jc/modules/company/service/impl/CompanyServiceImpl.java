@@ -1,5 +1,6 @@
 package com.jc.modules.company.service.impl;
 
+import com.jc.common.annotation.RedisCache;
 import com.jc.common.exception.JcException;
 import com.jc.modules.company.entity.Company;
 import com.jc.modules.company.mapper.CompanyMapper;
@@ -29,7 +30,7 @@ public class CompanyServiceImpl implements CompanyService {
     @Resource
     private InformationMapper informationMapper;
 
-    @Override
+    @RedisCache(key = "pub:cache_key_in_company_get",time = 3600)
     public Company getCompanyMessage() {
         return companyMapper.selectById(COM_CODE);
     }

@@ -28,10 +28,20 @@ public class JcExceptionHandler {
     @ExceptionHandler(JcException.class)
     public ResponseUtil handleJcException(JcException e){
         logger.error(e.getMsg(),e);
-        return ResponseUtil.error(e.getCode(), e.getMsg());
+        return ResponseUtil.error(e.getCode(), "服务器端出现异常");
     }
 
     //处理其他异常类
+    /**
+     * 处理RuntimeException
+     * @param
+     * @return
+     */
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseUtil handleRuntimeException(Exception e){
+        logger.error(e.getMessage(),e);
+        return ResponseUtil.error(500, "服务器端出现异常");
+    }
 
     /**
      * 处理未知异常
@@ -43,6 +53,5 @@ public class JcExceptionHandler {
         logger.error(e.getMessage(),e);
         return ResponseUtil.error(-1, "未知错误");
     }
-
 
 }
