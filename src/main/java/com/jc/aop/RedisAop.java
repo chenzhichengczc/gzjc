@@ -65,6 +65,7 @@ public class RedisAop {
         //判断redis是否存在当前key
         if(!redisUtil.hasKey(key)){
             Object proceed = joinPoint.proceed();
+            final Object[] args = joinPoint.getArgs();
             //设置失效时间
             boolean isSetCache = redisUtil.set(key,proceed, annotation.time());
             if(!isSetCache){
