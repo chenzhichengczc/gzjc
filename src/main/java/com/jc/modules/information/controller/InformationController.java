@@ -36,10 +36,10 @@ public class InformationController {
 
     //分页
     @RequestMapping(value = "/paging",method=RequestMethod.GET)
-    public ResponseUtil getInformationAndDetailList(int pageNum, int pageSize ,int categoryId){
+    public ResponseUtil getInformationAndDetailList(int pageNum){
         //使用分页插件
-        PageHelper.startPage(pageNum, pageSize);
-        List<InformationDetailEntity> paging=informationService.getList(categoryId);
+        PageHelper.startPage(pageNum, 7);
+        List<InformationDetailEntity> paging=informationService.getList();
         PageInfo<InformationDetailEntity> pageInfo=new PageInfo<>(paging);
         return ResponseUtil.success(pageInfo);
     }

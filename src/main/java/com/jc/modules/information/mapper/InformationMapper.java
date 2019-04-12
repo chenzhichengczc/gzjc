@@ -28,7 +28,7 @@ public interface InformationMapper extends BaseMapper<InformationEntity> {
    /*
       pageHelper分页
     */
-   List<InformationDetailEntity> getList(@Param("categoryId") Integer categoryId);
+   List<InformationDetailEntity> getList();
 
    @Select("select * from jc_information where status = 0")
    List<InformationEntity> getCatalogy();
