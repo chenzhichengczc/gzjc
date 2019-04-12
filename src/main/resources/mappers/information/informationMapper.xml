@@ -37,8 +37,10 @@
         LEFT JOIN
         jc_information_detail jid
          on ji.id = jid.category_id
+            <if test="categoryId != 0">
+                where jid.category_id = #{categoryId}
+            </if>
 
-            where jid.category_id = 7
 
          order by jid.update_time desc
     </select>

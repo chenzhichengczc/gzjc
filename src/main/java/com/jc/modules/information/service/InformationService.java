@@ -51,7 +51,7 @@ public interface InformationService extends IService<InformationEntity> {
     /**
      * 使用pagehelper分页
      */
-    List<InformationDetailEntity> getList();
+    List<InformationDetailEntity> getList(Integer categoryId);
 
     List<InformationEntity> selectPage();
 

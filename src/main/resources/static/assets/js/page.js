@@ -112,6 +112,7 @@ function getCatalogy() {
                 //$("[data-id = "+i+"]").addClass("text-primary").css("font-weight","bold")
 
                 var $dataList = $("<a class='js_columnSlide inline style--categoryA align_center' data-id = "+(i+1)+" href='javacript:void(0)' id='c"+(i+1)+"' onclick='selectCatalogy(id)' style='width: 107.5px;'>"+json.data[i].typeName+"</a>");
+                console.log("a: "+$dataList);
                 $("[data-id="+i+"]").after($dataList);
             }
         }

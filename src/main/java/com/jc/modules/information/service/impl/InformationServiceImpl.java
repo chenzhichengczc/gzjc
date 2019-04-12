@@ -38,8 +38,8 @@ public class InformationServiceImpl extends ServiceImpl<InformationMapper, Infor
     }
 
     @Override
-    public List<InformationDetailEntity> getList(){
-        List<InformationDetailEntity> typeList=informationMapper.getList();
+    public List<InformationDetailEntity> getList(Integer categoryId){
+        List<InformationDetailEntity> typeList=informationMapper.getList(categoryId);
         return typeList;
     }
 
