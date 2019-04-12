@@ -12,9 +12,9 @@ function getCatalogy() {
 
                 //$("[data-id = "+i+"]").addClass("text-primary").css("font-weight","bold")
                 console.log(json.data[i].id);
-                var $dataList = $("<a class='a' data-id = "+(i+1)+" href='javacript:void(0)' id='c"+(i+1)+"' onclick=selectCatalogy("+json.data[i].id+")  style='width: 107.5px;'>"+json.data[i].typeName+"</a>");
+                var $dataList = $("<div class='js_columnWrapper areaH--60 noWrap  noWhite' style='float:left'><a class='js_columnSlide inline style--categoryA align_center' data-id = "+(i+1)+" href='javacript:void(0)' id='c"+(i+1)+"' onclick=selectCatalogy("+json.data[i].id+")  style='width: 107.5px;'>"+json.data[i].typeName+"</a></div>");
 
-                $(".M-box").before($dataList);
+                $("#mu-service").before($dataList);
             }
             var categoryId = 0;
             getDate(categoryId);
@@ -27,7 +27,7 @@ function getCatalogy() {
 function selectCatalogy(categoryId){
 
     console.log("fasd");
-    $('.b').remove();
+    $('.block').remove();
     getDate(categoryId);
 }
 
@@ -55,7 +55,7 @@ function getDate(categoryId) {
              }*/
             for (var i = 0; i < pageInfo.list.length; i++) {
                 var info = pageInfo.list[i];
-                var $a_data = $("<a class='b' href='http://www.donews.com/news/detail/1/3040375.html' id='L" + (i + 1) + "'>" +
+                var $a_data = $("<a class='P--30 h--150 borderB--f5f5f5 block' href='http://www.donews.com/news/detail/1/3040375.html' id='L" + (i + 1) + "'>" +
                     "<div class='MR--20 fl h--full style--imgArea  relative'>" +
                     "<img class='' h--full absolute pos--center' src='../assets/images/zixuntu.jpg' style='max-width: inherit;' alt='zixuntu'> </div>" +
                     "<div class=''><div class='MB--10 FS--16'><span class='inline BC--ffa200 MR--10 PLR--10 radius4 PTB--2 fl'>" + info.informationEntity.typeName + "</span>" +
@@ -88,7 +88,7 @@ function getDate(categoryId) {
                             var pageInfo = json.data;
                             for (var i = 0; i < pageInfo.list.length; i++) {
                                 var info = pageInfo.list[i];
-                                var $a_data = $("<a class='b' href='http://www.donews.com/news/detail/1/3040375.html' id='L" + (i + 1) + "'>" +
+                                var $a_data = $("<a class='P--30 h--150 borderB--f5f5f5 block' href='http://www.donews.com/news/detail/1/3040375.html' id='L" + (i + 1) + "'>" +
                                     "<div class='MR--20 fl h--full style--imgArea  relative'>" +
                                     "<img class='' h--full absolute pos--center' src='../assets/images/zixuntu.jpg' style='max-width: inherit;' alt='zixuntu'> </div>" +
                                     "<div class=''><div class='MB--10 FS--16'><span class='inline BC--ffa200 MR--10 PLR--10 radius4 PTB--2 fl'>" + info.informationEntity.typeName + "</span>" +
